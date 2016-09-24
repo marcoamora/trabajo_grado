@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Easybus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+	<!-- Inicio del menú de opciones-->
+	<nav id="menu">
+	  <ul><a>Menu</a>
+
+	    <li> <span>Rutas</span>
+		<ul>
+		   <li><span>Cotrasangil</span>
+			<ul>
+			   <li><a href="#">Ruta 1</a></li>
+			   <li><a href="#">Ruta 2</a></li>
+			   <li><a href="#">Ruta 3</a></li>
+			</ul>
+		   </li>
+		   <li><span>Cootraguanenta</span>
+			<ul>
+			   <li><a href="#">Ruta 1</a></li>
+			   <li><a href="#">Ruta 2</a></li>
+			   <li><a href="#">Ruta 3</a></li>
+			</ul>			
+		   </li>
+		   <li><span>Cootrafonce</span>
+			<ul>
+			   <li><a href="#">Ruta 1</a></li>
+			   <li><a href="#">Ruta 2</a></li>
+			   <li><a href="#">Ruta 3</a></li>
+			</ul>			
+		   </li>
+		</ul>		
+	    </li>
+
+	    <li><span>Sitios</span>
+		<ul>
+		   <li><a href="#">Restaurantes</a></li>
+		   <li><a href="#">Parques</a></li>
+                   <li><a href="#">Hospitales</a></li>
+		   <li><a href="#">Talleres</a></li>
+		   <li><a href="#">Centros Comerciales</a></li>
+		   <li><a href="#">Otros</a></li>
+		</ul>
+	    </li>
+
+	  </ul>
+	</nav>	
+	
+	<!--seccion del mapa -->
+	<script type="text/javascript" 
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5wuAkIl3OxecBuUOdtd9Exc8lTLbGXas&callback=initMap" async defer>
+	</script>
+	<script type="text/javascript" src="js/map.js"></script>
+        <div id="map"> </div>	
+    </body>
+</html>
+
