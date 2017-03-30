@@ -12,6 +12,9 @@
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.marcos.trabajo_grado"
         }
     },
     "dependent_plugins": {}
