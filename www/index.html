@@ -9,18 +9,22 @@ and open the template in the editor.
         <title>Easybus</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link relacionados con los estilos-->
         <link rel="icon" type="image/png" href="favicon.png" />
 	      <link rel="stylesheet" href="css/style.css" />
 	      <link rel="stylesheet" href="css/bootstrap.css" />
 	      <link rel="stylesheet" href="css/bootstrap-responsive.css" />
 
+        <!--Script relacionados con el funcionamiento de la app-->
 	      <script src="js/jquery.js"></script>
         <script src="js/bootstrapcdn.js"></script>
+        <!--Api de google maps-->
         <script type="text/javascript"
   	       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5wuAkIl3OxecBuUOdtd9Exc8lTLbGXas&callback=initMap" async defer>
         </script>
         <script type="text/javascript" src="js/map.js"></script>
-        <script type="text/javascript" src="js/conexion.js" > app.initialize(); </script>
+        <!--la base de datos aun no funciona-->
+        <script type="text/javascript" src="js/conexion.js" ></script>
     </head>
     <body>
 
@@ -37,7 +41,7 @@ and open the template in the editor.
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><LEFT><img class=" d-block" style="padding-left: 1em; border-radius: 0.5em; " alt="Brand" src="img/logo.gif"></LEFT>EasyBus</a>
+      <a class="navbar-brand" href="#"><RIGHT><img class=" d-block" style="padding-left: 1em; border-radius: 0.5em; " alt="Brand" src="img/logo.gif"></RIGHT>EasyBus</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,7 +55,7 @@ and open the template in the editor.
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cotrasangil <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a onclick="mostrarRuta()">Ruta 1</a></li>
-            <li><a href="#">Ruta 2</a></li>
+            <li><a onclick="mostrarUbicacion()">Ruta 2</a></li>
             <li><a href="#">Ruta 3</a></li>
             <li><a href="#">Ruta 4</a></li>
           </ul>

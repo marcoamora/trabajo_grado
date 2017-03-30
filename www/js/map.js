@@ -1,6 +1,9 @@
+//Variables
 var map;
 var coorfenadas;
+var marcador
 
+//inicializa el mapa en la posicion dada en est caso San Gil
 function initMap(){
     map = new google.maps.Map(document.getElementById("map"),{
       center:{lat:6.55059, lng:-73.136742},
@@ -9,6 +12,7 @@ function initMap(){
     });
 }
 
+//Muestra una ruta ficticia de un recorrido de  un bus mejoras dejar que la base de datos de las coordenadas
 function mostrarRuta(){
   coordenadas = [
     {lng:-73.13738, lat:6.55988},
@@ -72,6 +76,7 @@ function mostrarRuta(){
     {lng:-73.13743, lat:6.5599},
     {lng:-73.13738, lat:6.55988}
   ];
+  //pinta la polilinea
  var flightPath = new google.maps.Polyline({
  path: coordenadas,
  geodesic: true,
@@ -79,6 +84,28 @@ function mostrarRuta(){
  strokeOpacity: 1.0,
  strokeWeight: 2
 });
-
 flightPath.setMap(map);
+
+}
+
+function mostrarUbicacion(){
+  function localizar(pos){
+    var latitud= pos.coords.latitude;
+    var longitud= pos.coords.longitude;
+
+    var latlong=new google.maps.LatLng(latitud, longitud);
+    marcador = new google.maps.Marker({
+      position: latlong,
+      map:initMap(),
+      title:"usted esta aqui"
+
+    //  animation: google.maps.Animation.DROP
+    });
+    localizar.setMap(map)
+  }
+  function error(){
+      outputInnerHTML ="<p>no esta en zaona acorde para la aplicacion</p>"
+  }
+  navigator.geolocation.getCurrentPosition(localizar,error);
+
 }
