@@ -1,7 +1,6 @@
 //Variables
 var map;
-var coorfenadas;
-var marcador
+var coordenadas;
 
 //inicializa el mapa en la posicion dada en est caso San Gil
 function initMap(){
@@ -77,35 +76,46 @@ function mostrarRuta(){
     {lng:-73.13738, lat:6.55988}
   ];
   //pinta la polilinea
- var flightPath = new google.maps.Polyline({
+ var ruta1 = new google.maps.Polyline({
  path: coordenadas,
  geodesic: true,
  strokeColor: '#000000',
  strokeOpacity: 1.0,
  strokeWeight: 2
 });
-flightPath.setMap(map);
+ruta1.setMap(map);
 
 }
 
-function mostrarUbicacion(){
-  function localizar(pos){
-    var latitud= pos.coords.latitude;
-    var longitud= pos.coords.longitude;
-
-    var latlong=new google.maps.LatLng(latitud, longitud);
-    marcador = new google.maps.Marker({
-      position: latlong,
-      map:initMap(),
-      title:"usted esta aqui"
-
-    //  animation: google.maps.Animation.DROP
+function mostrarPosition(){
+    var marker = new google.maps.InfoWindow({
+        map:map,
+        zoom:14
     });
-    localizar.setMap(map)
-  }
-  function error(){
-      outputInnerHTML ="<p>no esta en zaona acorde para la aplicacion</p>"
-  }
-  navigator.geolocation.getCurrentPosition(localizar,error);
-
+    
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            var pos={
+                lat:position.coords.latitude,
+                lng:position.coords.longitude
+            };
+            
+            marker.setPosition(pos);
+            marker.setContent('Usted esta aqui');
+            map.setCenter(map);
+        },function(){
+            handleLocationError(true,marker,map.getCenter());
+        });
+    } else{
+        handleLocationError(false.marker,map.getCenter());
+    }
+    
+    function handleLocationError(){
+        marker.setPosition(pos);
+        marker.setContent(browserHasGeolocation ?
+                         'error: el servicio de geolocalizacion fallo':
+                         'error: tu navegador no soporta la geolocalizacion');
+    }
+    
+                                
 }
