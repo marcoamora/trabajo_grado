@@ -87,19 +87,21 @@ ruta1.setMap(map);
 
 }
 
+//me muestra la ubicacion actual de la persona
 function mostrarPosition(){
     var marker = new google.maps.InfoWindow({
         map:map,
-        zoom:14
+        zoom:22
     });
-    
+
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             var pos={
                 lat:position.coords.latitude,
-                lng:position.coords.longitude
+                lng:position.coords.longitude,
+                accuracy:position.coords.accuracy
             };
-            
+
             marker.setPosition(pos);
             marker.setContent('Usted esta aqui');
             map.setCenter(map);
@@ -109,13 +111,13 @@ function mostrarPosition(){
     } else{
         handleLocationError(false.marker,map.getCenter());
     }
-    
+
     function handleLocationError(){
         marker.setPosition(pos);
         marker.setContent(browserHasGeolocation ?
                          'error: el servicio de geolocalizacion fallo':
                          'error: tu navegador no soporta la geolocalizacion');
     }
-    
-                                
+
 }
+//muestra el cambio de posicion de la persona en un intervalo de tiempo
