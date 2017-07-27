@@ -87,7 +87,14 @@ ruta1.setMap(map);
 
 }
 
-//me muestra la ubicacion actual de la persona
+//funcion para mostrar el error
+function handleLocationError(){
+        marker.setPosition(pos);
+        marker.setContent(browserHasGeolocation ?
+                         'error: el servicio de geolocalizacion fallo':
+                         'error: tu navegador no soporta la geolocalizacion');
+    }
+//funcion para ubicar a la persona mediante una ip (wifi)
 function mostrarPosition(){
     var marker = new google.maps.InfoWindow({
         map:map,
@@ -110,14 +117,34 @@ function mostrarPosition(){
         });
     } else{
         handleLocationError(false.marker,map.getCenter());
-    }
-
-    function handleLocationError(){
-        marker.setPosition(pos);
-        marker.setContent(browserHasGeolocation ?
-                         'error: el servicio de geolocalizacion fallo':
-                         'error: tu navegador no soporta la geolocalizacion');
-    }
+    }   
 
 }
-//muestra el cambio de posicion de la persona en un intervalo de tiempo
+//funcion encargada para el seguimiento que se actualizara cada 3 seg
+function mostrarSeguimiento(){
+    var marker = new google.maps.InfoWindow({
+        map:map,
+        zoom:22
+    });
+
+    if(navigator.geolocation){
+        navigator.geolocation.watchPosition(function(position){
+            var pos={
+                lat:position.coords.latitude,
+                lng:position.coords.longitude,
+                accuracy:position.coords.accuracy
+            };
+
+            marker.setPosition(pos);
+            marker.setContent('Usted esta aqui');
+            map.setCenter(map);
+        },function(){
+            handleLocationError(true,marker,map.getCenter());
+        },{timeout:30000});
+    } else{
+        handleLocationError(false.marker,map.getCenter());
+    }   
+
+}
+
+//agregar funcion para limpiar el marcador y el seguimiento
