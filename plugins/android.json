@@ -10,16 +10,7 @@
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
-        "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
         "cordova-plugin-device": {
@@ -34,9 +25,6 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
@@ -44,9 +32,6 @@
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
-        "cordova-plugin-media": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
         "cordova-plugin-network-information": {
@@ -68,12 +53,5 @@
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.marcos.trabajo_grado"
-        }
-    }
+    "dependent_plugins": {}
 }
