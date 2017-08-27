@@ -116,4 +116,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-sqlite-storage" spec="~1.5.3" />
+    <plugin name="cordova-spatialite-storage" spec="https://github.com/DisyInformationssysteme/Cordova-spatialite-storage" />
 </widget>

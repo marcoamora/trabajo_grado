@@ -134,5 +134,14 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-spatialite-storage": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -5,5 +5,9 @@
     "ImageIO.framework": null,
     "AVFoundation.framework": null,
     "AddressBook.framework": null,
-    "AddressBookUI.framework": null
+    "AddressBookUI.framework": null,
+    "libiconv.dylib": 1,
+    "libc++.dylib": 1,
+    "Security.framework": 1,
+    "libxml2.dylib": 1
 }

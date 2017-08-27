@@ -23,6 +23,16 @@
 		21B6EE651B794C0AA6EBFC0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C022BD6AA5AF493083830CD0 /* CoreLocation.framework */; };
 		569396E4BF9348BEA7795A7C /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D54AEB2B045619233C71E /* SQLitePlugin.m */; };
 		98B46C7FEAD24C3C957968A2 /* sqlite3.c in Resources */ = {isa = PBXBuildFile; fileRef = D7451F6486A94828BFE0DB8D /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE  -DSQLITE_OMIT_BUILTIN_TEST -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_DEFAULT_PAGE_SIZE=1024 -DSQLITE_DEFAULT_CACHE_SIZE=2000"; }; };
+		11E934A1E92740C39A330D70 /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB99C5B50094D9F9BCECF81 /* SQLitePlugin.m */; };
+		9174665E8CD6426CAE34C61E /* libgeos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845B19544D6F494FA649EE04 /* libgeos.a */; };
+		322AAD423EC343A989FA348E /* libgeos_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED528F71FCB4727BB9D7810 /* libgeos_c.a */; };
+		ABDF5A3D5A9745CEB0610BA0 /* libproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC842B0D942C4838AEB00515 /* libproj.a */; };
+		8E5D95377A26422A89E5C6DF /* libspatialite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C99E6674AB4215BC34C1B7 /* libspatialite.a */; };
+		91C449E525B54449BD867ABF /* libsqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6193FB3A956426F9C818A98 /* libsqlite3.a */; };
+		41E2D7BF21E347BF984250C6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC00CF9743F24ADF8B6B1321 /* libiconv.dylib */; };
+		C3F8384E2595462EA608B647 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1647B237ECFF4CB49D12C47A /* libc++.dylib */; };
+		D2F3EB52C0F744E4AE2ABB82 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF64E818C0DA4194ABC3B3F6 /* Security.framework */; };
+		EC48390C51B847EC9210D333 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F8E51283D94F32998C71D0 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +85,414 @@
 		D7451F6486A94828BFE0DB8D /* sqlite3.c */ = {isa = PBXFileReference; name = "sqlite3.c"; path = "cordova-sqlite-storage/sqlite3.c"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		4ACB504C4A4B4C878A37B7AD /* SQLitePlugin.h */ = {isa = PBXFileReference; name = "SQLitePlugin.h"; path = "cordova-sqlite-storage/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		AFB2D80D86884E4481D6BF6A /* sqlite3.h */ = {isa = PBXFileReference; name = "sqlite3.h"; path = "cordova-sqlite-storage/sqlite3.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9CB99C5B50094D9F9BCECF81 /* SQLitePlugin.m */ = {isa = PBXFileReference; name = "SQLitePlugin.m"; path = "cordova-spatialite-storage/SQLitePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		845B19544D6F494FA649EE04 /* libgeos.a */ = {isa = PBXFileReference; name = "libgeos.a"; path = "trabajo_Grado/Plugins/cordova-spatialite-storage/libgeos.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		1ED528F71FCB4727BB9D7810 /* libgeos_c.a */ = {isa = PBXFileReference; name = "libgeos_c.a"; path = "trabajo_Grado/Plugins/cordova-spatialite-storage/libgeos_c.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		DC842B0D942C4838AEB00515 /* libproj.a */ = {isa = PBXFileReference; name = "libproj.a"; path = "trabajo_Grado/Plugins/cordova-spatialite-storage/libproj.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E4C99E6674AB4215BC34C1B7 /* libspatialite.a */ = {isa = PBXFileReference; name = "libspatialite.a"; path = "trabajo_Grado/Plugins/cordova-spatialite-storage/libspatialite.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F6193FB3A956426F9C818A98 /* libsqlite3.a */ = {isa = PBXFileReference; name = "libsqlite3.a"; path = "trabajo_Grado/Plugins/cordova-spatialite-storage/libsqlite3.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7CE3D367DE944E3B8CC29126 /* SQLitePlugin.h */ = {isa = PBXFileReference; name = "SQLitePlugin.h"; path = "cordova-spatialite-storage/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6335BD31EC984D018DB33C1C /* geos.h */ = {isa = PBXFileReference; name = "geos.h"; path = "cordova-spatialite-storage/common/geos.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DF727EA7FC754E8EB3C22074 /* geos_c.h */ = {isa = PBXFileReference; name = "geos_c.h"; path = "cordova-spatialite-storage/common/geos_c.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F66E95861E124990B1C3A8D1 /* org_proj4_Projections.h */ = {isa = PBXFileReference; name = "org_proj4_Projections.h"; path = "cordova-spatialite-storage/common/org_proj4_Projections.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6397722CBC9745949E8824A6 /* proj_api.h */ = {isa = PBXFileReference; name = "proj_api.h"; path = "cordova-spatialite-storage/common/proj_api.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A59DA70C0EBA4193943300C7 /* spatialite.h */ = {isa = PBXFileReference; name = "spatialite.h"; path = "cordova-spatialite-storage/common/spatialite.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CB7DB35002FA4DC2A6019A80 /* sqlite3.h */ = {isa = PBXFileReference; name = "sqlite3.h"; path = "cordova-spatialite-storage/common/sqlite3.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EC3476E8BEBA43BA97E2AEFC /* sqlite3ext.h */ = {isa = PBXFileReference; name = "sqlite3ext.h"; path = "cordova-spatialite-storage/common/sqlite3ext.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		393D336A45AF43BEBD14737F /* export.h */ = {isa = PBXFileReference; name = "export.h"; path = "cordova-spatialite-storage/common/geos/export.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CFBC7763ED4D435C9115418F /* geom.h */ = {isa = PBXFileReference; name = "geom.h"; path = "cordova-spatialite-storage/common/geos/geom.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B90A09018FBD4AC0B36020D2 /* geomgraph.h */ = {isa = PBXFileReference; name = "geomgraph.h"; path = "cordova-spatialite-storage/common/geos/geomgraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B9B41F2B8FB64F008FC257F1 /* geomgraphindex.h */ = {isa = PBXFileReference; name = "geomgraphindex.h"; path = "cordova-spatialite-storage/common/geos/geomgraphindex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CC9AF077C82C4BF9A1A2B5E5 /* geomUtil.h */ = {isa = PBXFileReference; name = "geomUtil.h"; path = "cordova-spatialite-storage/common/geos/geomUtil.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B3812E78C54149FBBD720323 /* geosAlgorithm.h */ = {isa = PBXFileReference; name = "geosAlgorithm.h"; path = "cordova-spatialite-storage/common/geos/geosAlgorithm.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		09CF2C983CE6409A8E3C832E /* indexBintree.h */ = {isa = PBXFileReference; name = "indexBintree.h"; path = "cordova-spatialite-storage/common/geos/indexBintree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C64FC8CB2BB2400196DB1BAF /* indexChain.h */ = {isa = PBXFileReference; name = "indexChain.h"; path = "cordova-spatialite-storage/common/geos/indexChain.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F16B42FB198C49948A5065DA /* indexQuadtree.h */ = {isa = PBXFileReference; name = "indexQuadtree.h"; path = "cordova-spatialite-storage/common/geos/indexQuadtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AD81D84AA62C49558197ED6A /* indexStrtree.h */ = {isa = PBXFileReference; name = "indexStrtree.h"; path = "cordova-spatialite-storage/common/geos/indexStrtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		76A2AA9305774F1E972B6CD0 /* indexSweepline.h */ = {isa = PBXFileReference; name = "indexSweepline.h"; path = "cordova-spatialite-storage/common/geos/indexSweepline.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C075F9F83DC04D748E9FCC68 /* inline.h */ = {isa = PBXFileReference; name = "inline.h"; path = "cordova-spatialite-storage/common/geos/inline.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1E6339F38EE644CEB7F96293 /* io.h */ = {isa = PBXFileReference; name = "io.h"; path = "cordova-spatialite-storage/common/geos/io.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ED431954E3864FFE9028F6E3 /* noding.h */ = {isa = PBXFileReference; name = "noding.h"; path = "cordova-spatialite-storage/common/geos/noding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2F4FFAEAAD1342DE8F5724F0 /* nodingSnapround.h */ = {isa = PBXFileReference; name = "nodingSnapround.h"; path = "cordova-spatialite-storage/common/geos/nodingSnapround.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CC875EFB13D942979873D13C /* opBuffer.h */ = {isa = PBXFileReference; name = "opBuffer.h"; path = "cordova-spatialite-storage/common/geos/opBuffer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		42A05A4B065542128389DCE1 /* opDistance.h */ = {isa = PBXFileReference; name = "opDistance.h"; path = "cordova-spatialite-storage/common/geos/opDistance.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		876A084F55114D1A99B86DA8 /* operation.h */ = {isa = PBXFileReference; name = "operation.h"; path = "cordova-spatialite-storage/common/geos/operation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		38325B3F9C424F478180F9B3 /* opLinemerge.h */ = {isa = PBXFileReference; name = "opLinemerge.h"; path = "cordova-spatialite-storage/common/geos/opLinemerge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D84201FF8FE94ABDA89A734D /* opOverlay.h */ = {isa = PBXFileReference; name = "opOverlay.h"; path = "cordova-spatialite-storage/common/geos/opOverlay.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3B3C6C6207F14DF19F264833 /* opPolygonize.h */ = {isa = PBXFileReference; name = "opPolygonize.h"; path = "cordova-spatialite-storage/common/geos/opPolygonize.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BBCD6758780144CDA979D6B9 /* opPredicate.h */ = {isa = PBXFileReference; name = "opPredicate.h"; path = "cordova-spatialite-storage/common/geos/opPredicate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BFB3501374C1451A87E0DCE3 /* opRelate.h */ = {isa = PBXFileReference; name = "opRelate.h"; path = "cordova-spatialite-storage/common/geos/opRelate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A87BC1500F0F42C3AC1920A0 /* opValid.h */ = {isa = PBXFileReference; name = "opValid.h"; path = "cordova-spatialite-storage/common/geos/opValid.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3794728B6AAE4FC99308DB01 /* planargraph.h */ = {isa = PBXFileReference; name = "planargraph.h"; path = "cordova-spatialite-storage/common/geos/planargraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		683515AA9FF64817BB6B5CD1 /* platform.h */ = {isa = PBXFileReference; name = "platform.h"; path = "cordova-spatialite-storage/common/geos/platform.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9B39552ED0E944588BC81520 /* precision.h */ = {isa = PBXFileReference; name = "precision.h"; path = "cordova-spatialite-storage/common/geos/precision.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3C30F92E78994F479408C1E7 /* profiler.h */ = {isa = PBXFileReference; name = "profiler.h"; path = "cordova-spatialite-storage/common/geos/profiler.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		792102B1BC3F4BBA90A3F2B1 /* spatialIndex.h */ = {isa = PBXFileReference; name = "spatialIndex.h"; path = "cordova-spatialite-storage/common/geos/spatialIndex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B82B1CA74EA14EA6B9278712 /* timeval.h */ = {isa = PBXFileReference; name = "timeval.h"; path = "cordova-spatialite-storage/common/geos/timeval.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0B16210E14E5478C9625F69F /* unload.h */ = {isa = PBXFileReference; name = "unload.h"; path = "cordova-spatialite-storage/common/geos/unload.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F4EFD8D711724753B193BEC0 /* util.h */ = {isa = PBXFileReference; name = "util.h"; path = "cordova-spatialite-storage/common/geos/util.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		376BB6EA15DC456DA4EF58D0 /* version.h */ = {isa = PBXFileReference; name = "version.h"; path = "cordova-spatialite-storage/common/geos/version.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2A43271672D54165B5288CCF /* Angle.h */ = {isa = PBXFileReference; name = "Angle.h"; path = "cordova-spatialite-storage/common/geos/algorithm/Angle.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DE16E70965E342F6BEBBBDF2 /* BoundaryNodeRule.h */ = {isa = PBXFileReference; name = "BoundaryNodeRule.h"; path = "cordova-spatialite-storage/common/geos/algorithm/BoundaryNodeRule.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F8D24CD403FD4234832521FD /* CentralEndpointIntersector.h */ = {isa = PBXFileReference; name = "CentralEndpointIntersector.h"; path = "cordova-spatialite-storage/common/geos/algorithm/CentralEndpointIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7FB4DBEE461470FBE4C097D /* Centroid.h */ = {isa = PBXFileReference; name = "Centroid.h"; path = "cordova-spatialite-storage/common/geos/algorithm/Centroid.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CA503126C1614FB8BD7B79E1 /* CentroidArea.h */ = {isa = PBXFileReference; name = "CentroidArea.h"; path = "cordova-spatialite-storage/common/geos/algorithm/CentroidArea.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C3D223ADEB12492E9048D45D /* CentroidLine.h */ = {isa = PBXFileReference; name = "CentroidLine.h"; path = "cordova-spatialite-storage/common/geos/algorithm/CentroidLine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		838A0627036D44B39AF6DFBB /* CentroidPoint.h */ = {isa = PBXFileReference; name = "CentroidPoint.h"; path = "cordova-spatialite-storage/common/geos/algorithm/CentroidPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		70BCC141845C429C8DACCA89 /* CGAlgorithms.h */ = {isa = PBXFileReference; name = "CGAlgorithms.h"; path = "cordova-spatialite-storage/common/geos/algorithm/CGAlgorithms.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4229C713C07548A3BA8C3E94 /* ConvexHull.h */ = {isa = PBXFileReference; name = "ConvexHull.h"; path = "cordova-spatialite-storage/common/geos/algorithm/ConvexHull.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		33FFEFE00F8F488CAF822BF9 /* ConvexHull.inl */ = {isa = PBXFileReference; name = "ConvexHull.inl"; path = "cordova-spatialite-storage/common/geos/algorithm/ConvexHull.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB7C98BDBE014FA7B2BD024C /* HCoordinate.h */ = {isa = PBXFileReference; name = "HCoordinate.h"; path = "cordova-spatialite-storage/common/geos/algorithm/HCoordinate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C44542AB65E845D3BC44139D /* InteriorPointArea.h */ = {isa = PBXFileReference; name = "InteriorPointArea.h"; path = "cordova-spatialite-storage/common/geos/algorithm/InteriorPointArea.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D062E8B5545849DB93FFF0FA /* InteriorPointLine.h */ = {isa = PBXFileReference; name = "InteriorPointLine.h"; path = "cordova-spatialite-storage/common/geos/algorithm/InteriorPointLine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D713E499E3C74899A2828705 /* InteriorPointPoint.h */ = {isa = PBXFileReference; name = "InteriorPointPoint.h"; path = "cordova-spatialite-storage/common/geos/algorithm/InteriorPointPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2C4B6B5F1EBC499FAF3716A4 /* LineIntersector.h */ = {isa = PBXFileReference; name = "LineIntersector.h"; path = "cordova-spatialite-storage/common/geos/algorithm/LineIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		066102CB60784DD88A5B3DE6 /* MCPointInRing.h */ = {isa = PBXFileReference; name = "MCPointInRing.h"; path = "cordova-spatialite-storage/common/geos/algorithm/MCPointInRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2B18572892584CC4B8505F71 /* MinimumDiameter.h */ = {isa = PBXFileReference; name = "MinimumDiameter.h"; path = "cordova-spatialite-storage/common/geos/algorithm/MinimumDiameter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2D597C9896414D59ABB7C231 /* NotRepresentableException.h */ = {isa = PBXFileReference; name = "NotRepresentableException.h"; path = "cordova-spatialite-storage/common/geos/algorithm/NotRepresentableException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B6093184674847C2B59B4A9A /* PointInRing.h */ = {isa = PBXFileReference; name = "PointInRing.h"; path = "cordova-spatialite-storage/common/geos/algorithm/PointInRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B33CE4C16E1647D189AD15CC /* PointLocator.h */ = {isa = PBXFileReference; name = "PointLocator.h"; path = "cordova-spatialite-storage/common/geos/algorithm/PointLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A75E9D9F6ADC43FB9D0CB74A /* RayCrossingCounter.h */ = {isa = PBXFileReference; name = "RayCrossingCounter.h"; path = "cordova-spatialite-storage/common/geos/algorithm/RayCrossingCounter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A0B4A007540B4D56AEEF6FA2 /* RobustDeterminant.h */ = {isa = PBXFileReference; name = "RobustDeterminant.h"; path = "cordova-spatialite-storage/common/geos/algorithm/RobustDeterminant.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2321C47462BF415786A3D224 /* SimplePointInRing.h */ = {isa = PBXFileReference; name = "SimplePointInRing.h"; path = "cordova-spatialite-storage/common/geos/algorithm/SimplePointInRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		21E39DA0AAA44D2B8D69F651 /* SIRtreePointInRing.h */ = {isa = PBXFileReference; name = "SIRtreePointInRing.h"; path = "cordova-spatialite-storage/common/geos/algorithm/SIRtreePointInRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1DEB632F862D40F897921CDA /* DiscreteHausdorffDistance.h */ = {isa = PBXFileReference; name = "DiscreteHausdorffDistance.h"; path = "cordova-spatialite-storage/common/geos/algorithm/distance/DiscreteHausdorffDistance.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7B10EA1EE1084A4BAD4EC353 /* DistanceToPoint.h */ = {isa = PBXFileReference; name = "DistanceToPoint.h"; path = "cordova-spatialite-storage/common/geos/algorithm/distance/DistanceToPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EDB33677166044F7AE561A7B /* PointPairDistance.h */ = {isa = PBXFileReference; name = "PointPairDistance.h"; path = "cordova-spatialite-storage/common/geos/algorithm/distance/PointPairDistance.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D1285D218FDC4A689C4D75C8 /* IndexedPointInAreaLocator.h */ = {isa = PBXFileReference; name = "IndexedPointInAreaLocator.h"; path = "cordova-spatialite-storage/common/geos/algorithm/locate/IndexedPointInAreaLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1FE5D58F282942B6AB71BD90 /* PointOnGeometryLocator.h */ = {isa = PBXFileReference; name = "PointOnGeometryLocator.h"; path = "cordova-spatialite-storage/common/geos/algorithm/locate/PointOnGeometryLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B8D41D8C6E1A4E4391D56E38 /* SimplePointInAreaLocator.h */ = {isa = PBXFileReference; name = "SimplePointInAreaLocator.h"; path = "cordova-spatialite-storage/common/geos/algorithm/locate/SimplePointInAreaLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		37E82F4BF9924C9B8CBCFA33 /* BinaryOp.h */ = {isa = PBXFileReference; name = "BinaryOp.h"; path = "cordova-spatialite-storage/common/geos/geom/BinaryOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8EE6D48151AA4D959CE5A892 /* Coordinate.h */ = {isa = PBXFileReference; name = "Coordinate.h"; path = "cordova-spatialite-storage/common/geos/geom/Coordinate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ADFDA3F83A4A47159235FE67 /* Coordinate.inl */ = {isa = PBXFileReference; name = "Coordinate.inl"; path = "cordova-spatialite-storage/common/geos/geom/Coordinate.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BC1842E1AB0498BB03F2789 /* CoordinateArraySequence.h */ = {isa = PBXFileReference; name = "CoordinateArraySequence.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateArraySequence.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		278D848C60D24321B848F772 /* CoordinateArraySequenceFactory.h */ = {isa = PBXFileReference; name = "CoordinateArraySequenceFactory.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateArraySequenceFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		06118D0094DD4661B983D2FB /* CoordinateArraySequenceFactory.inl */ = {isa = PBXFileReference; name = "CoordinateArraySequenceFactory.inl"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateArraySequenceFactory.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09B87D5AF59B4DC8A357DC5A /* CoordinateFilter.h */ = {isa = PBXFileReference; name = "CoordinateFilter.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		83612238ADE54082ACB4B150 /* CoordinateList.h */ = {isa = PBXFileReference; name = "CoordinateList.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateList.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AFF7AD895CB94F388BCF292E /* CoordinateSequence.h */ = {isa = PBXFileReference; name = "CoordinateSequence.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateSequence.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3912B2B2E77C481E9B97BE53 /* CoordinateSequenceFactory.h */ = {isa = PBXFileReference; name = "CoordinateSequenceFactory.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateSequenceFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6FFFA848DF08450E9569B396 /* CoordinateSequenceFilter.h */ = {isa = PBXFileReference; name = "CoordinateSequenceFilter.h"; path = "cordova-spatialite-storage/common/geos/geom/CoordinateSequenceFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ABFB4D081A194F30B3DC2378 /* Dimension.h */ = {isa = PBXFileReference; name = "Dimension.h"; path = "cordova-spatialite-storage/common/geos/geom/Dimension.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		088D3B2E29304482BE0A9D59 /* Envelope.h */ = {isa = PBXFileReference; name = "Envelope.h"; path = "cordova-spatialite-storage/common/geos/geom/Envelope.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BB1CF320E4894B96B9F599F1 /* Envelope.inl */ = {isa = PBXFileReference; name = "Envelope.inl"; path = "cordova-spatialite-storage/common/geos/geom/Envelope.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31707FC8AFBE42DEB07A6AEF /* Geometry.h */ = {isa = PBXFileReference; name = "Geometry.h"; path = "cordova-spatialite-storage/common/geos/geom/Geometry.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3EE6FD6035CE4508A3596896 /* GeometryCollection.h */ = {isa = PBXFileReference; name = "GeometryCollection.h"; path = "cordova-spatialite-storage/common/geos/geom/GeometryCollection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A5E124D5054740B4B174CDFD /* GeometryCollection.inl */ = {isa = PBXFileReference; name = "GeometryCollection.inl"; path = "cordova-spatialite-storage/common/geos/geom/GeometryCollection.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9F38D1579E0E4BAA840A15BD /* GeometryComponentFilter.h */ = {isa = PBXFileReference; name = "GeometryComponentFilter.h"; path = "cordova-spatialite-storage/common/geos/geom/GeometryComponentFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E94D7938B0D34E5B822C8362 /* GeometryFactory.h */ = {isa = PBXFileReference; name = "GeometryFactory.h"; path = "cordova-spatialite-storage/common/geos/geom/GeometryFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E049BDD32CA84B449E7595B9 /* GeometryFactory.inl */ = {isa = PBXFileReference; name = "GeometryFactory.inl"; path = "cordova-spatialite-storage/common/geos/geom/GeometryFactory.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A5BC0CDFF8145349BC360BF /* GeometryFilter.h */ = {isa = PBXFileReference; name = "GeometryFilter.h"; path = "cordova-spatialite-storage/common/geos/geom/GeometryFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C89B7CCB37484921A5010540 /* GeometryList.h */ = {isa = PBXFileReference; name = "GeometryList.h"; path = "cordova-spatialite-storage/common/geos/geom/GeometryList.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		80DC8C8B0FC547118318C1DB /* IntersectionMatrix.h */ = {isa = PBXFileReference; name = "IntersectionMatrix.h"; path = "cordova-spatialite-storage/common/geos/geom/IntersectionMatrix.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0B018C36F4174E7AB7D7D84E /* Lineal.h */ = {isa = PBXFileReference; name = "Lineal.h"; path = "cordova-spatialite-storage/common/geos/geom/Lineal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BE36AB35A0374CF490CCFFA8 /* LinearRing.h */ = {isa = PBXFileReference; name = "LinearRing.h"; path = "cordova-spatialite-storage/common/geos/geom/LinearRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F809F64E06244198A692C54C /* LineSegment.h */ = {isa = PBXFileReference; name = "LineSegment.h"; path = "cordova-spatialite-storage/common/geos/geom/LineSegment.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7D66798FE18E47C9BD517B92 /* LineSegment.inl */ = {isa = PBXFileReference; name = "LineSegment.inl"; path = "cordova-spatialite-storage/common/geos/geom/LineSegment.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D6D5B9240D84E24AC1949C6 /* LineString.h */ = {isa = PBXFileReference; name = "LineString.h"; path = "cordova-spatialite-storage/common/geos/geom/LineString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3FB2B715B4C749A381CABB27 /* Location.h */ = {isa = PBXFileReference; name = "Location.h"; path = "cordova-spatialite-storage/common/geos/geom/Location.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A34CA4D3C54B490E8ADC486A /* MultiLineString.h */ = {isa = PBXFileReference; name = "MultiLineString.h"; path = "cordova-spatialite-storage/common/geos/geom/MultiLineString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF2F290711D543C1A082239C /* MultiLineString.inl */ = {isa = PBXFileReference; name = "MultiLineString.inl"; path = "cordova-spatialite-storage/common/geos/geom/MultiLineString.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC0AE3B2F4A2473699BA70F5 /* MultiPoint.h */ = {isa = PBXFileReference; name = "MultiPoint.h"; path = "cordova-spatialite-storage/common/geos/geom/MultiPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6061C33EABF24C6493C3927E /* MultiPolygon.h */ = {isa = PBXFileReference; name = "MultiPolygon.h"; path = "cordova-spatialite-storage/common/geos/geom/MultiPolygon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EA9049662948469E8B6BD70B /* MultiPolygon.inl */ = {isa = PBXFileReference; name = "MultiPolygon.inl"; path = "cordova-spatialite-storage/common/geos/geom/MultiPolygon.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECC54A3E28EF4E998335C7A1 /* Point.h */ = {isa = PBXFileReference; name = "Point.h"; path = "cordova-spatialite-storage/common/geos/geom/Point.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		920ED2A7AE2345868F0FC237 /* Polygon.h */ = {isa = PBXFileReference; name = "Polygon.h"; path = "cordova-spatialite-storage/common/geos/geom/Polygon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		239F464D8CC1447684C6376D /* Polygonal.h */ = {isa = PBXFileReference; name = "Polygonal.h"; path = "cordova-spatialite-storage/common/geos/geom/Polygonal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		385F38B8EF134BA3A51DF1A7 /* PrecisionModel.h */ = {isa = PBXFileReference; name = "PrecisionModel.h"; path = "cordova-spatialite-storage/common/geos/geom/PrecisionModel.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A2D700A3BDA64485BAB5B43A /* PrecisionModel.inl */ = {isa = PBXFileReference; name = "PrecisionModel.inl"; path = "cordova-spatialite-storage/common/geos/geom/PrecisionModel.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CCF2FD6B8224D9AA32E3645 /* Puntal.h */ = {isa = PBXFileReference; name = "Puntal.h"; path = "cordova-spatialite-storage/common/geos/geom/Puntal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		459AF21A225E4B6483786D06 /* Triangle.h */ = {isa = PBXFileReference; name = "Triangle.h"; path = "cordova-spatialite-storage/common/geos/geom/Triangle.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3BEA26F841B14D4AABE223F8 /* AbstractPreparedPolygonContains.h */ = {isa = PBXFileReference; name = "AbstractPreparedPolygonContains.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/AbstractPreparedPolygonContains.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3118D5C8338E46A9AC12E72E /* BasicPreparedGeometry.h */ = {isa = PBXFileReference; name = "BasicPreparedGeometry.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/BasicPreparedGeometry.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		42D591EFF94343AE9D480058 /* PreparedGeometry.h */ = {isa = PBXFileReference; name = "PreparedGeometry.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedGeometry.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8D69922F0442485FACE6D5AE /* PreparedGeometryFactory.h */ = {isa = PBXFileReference; name = "PreparedGeometryFactory.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedGeometryFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		52F19644693349068E50D977 /* PreparedLineString.h */ = {isa = PBXFileReference; name = "PreparedLineString.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedLineString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D6A4F54D7C57457B9082703F /* PreparedLineStringIntersects.h */ = {isa = PBXFileReference; name = "PreparedLineStringIntersects.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedLineStringIntersects.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FDED77C9200D4FF1AE9DDD85 /* PreparedPoint.h */ = {isa = PBXFileReference; name = "PreparedPoint.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B04DF7C9541B4548B02966CB /* PreparedPolygon.h */ = {isa = PBXFileReference; name = "PreparedPolygon.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4A50A7ADDFF04E2794A9793F /* PreparedPolygonContains.h */ = {isa = PBXFileReference; name = "PreparedPolygonContains.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygonContains.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C43F7E4ED15B4EE3A6468699 /* PreparedPolygonContainsProperly.h */ = {isa = PBXFileReference; name = "PreparedPolygonContainsProperly.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygonContainsProperly.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		23D8794399744303BBFC9DC9 /* PreparedPolygonCovers.h */ = {isa = PBXFileReference; name = "PreparedPolygonCovers.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygonCovers.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BB59FF227E4D45B0B1EA4CC1 /* PreparedPolygonIntersects.h */ = {isa = PBXFileReference; name = "PreparedPolygonIntersects.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygonIntersects.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		724393E51E874974A7B3596E /* PreparedPolygonPredicate.h */ = {isa = PBXFileReference; name = "PreparedPolygonPredicate.h"; path = "cordova-spatialite-storage/common/geos/geom/prep/PreparedPolygonPredicate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AAE65D5060A24D529F0A481D /* ComponentCoordinateExtracter.h */ = {isa = PBXFileReference; name = "ComponentCoordinateExtracter.h"; path = "cordova-spatialite-storage/common/geos/geom/util/ComponentCoordinateExtracter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8E11717FBC32470E8E22EFEA /* CoordinateOperation.h */ = {isa = PBXFileReference; name = "CoordinateOperation.h"; path = "cordova-spatialite-storage/common/geos/geom/util/CoordinateOperation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E4ED1921FF6846A0A5FA068A /* GeometryCombiner.h */ = {isa = PBXFileReference; name = "GeometryCombiner.h"; path = "cordova-spatialite-storage/common/geos/geom/util/GeometryCombiner.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		769DBC60676946BB967DB9F4 /* GeometryEditor.h */ = {isa = PBXFileReference; name = "GeometryEditor.h"; path = "cordova-spatialite-storage/common/geos/geom/util/GeometryEditor.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7A87C0C73D5D4ADDB5C408A1 /* GeometryEditorOperation.h */ = {isa = PBXFileReference; name = "GeometryEditorOperation.h"; path = "cordova-spatialite-storage/common/geos/geom/util/GeometryEditorOperation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B81901870DDE4196A878CCF0 /* GeometryExtracter.h */ = {isa = PBXFileReference; name = "GeometryExtracter.h"; path = "cordova-spatialite-storage/common/geos/geom/util/GeometryExtracter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A0FED17AEDC64C3F977710CC /* GeometryTransformer.h */ = {isa = PBXFileReference; name = "GeometryTransformer.h"; path = "cordova-spatialite-storage/common/geos/geom/util/GeometryTransformer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E6B417D7DDD94438A0C6D4F0 /* LinearComponentExtracter.h */ = {isa = PBXFileReference; name = "LinearComponentExtracter.h"; path = "cordova-spatialite-storage/common/geos/geom/util/LinearComponentExtracter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D36EF3629EAB41B3A9F86907 /* PointExtracter.h */ = {isa = PBXFileReference; name = "PointExtracter.h"; path = "cordova-spatialite-storage/common/geos/geom/util/PointExtracter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2CE9F0C372EA4F06BAB5508E /* PolygonExtracter.h */ = {isa = PBXFileReference; name = "PolygonExtracter.h"; path = "cordova-spatialite-storage/common/geos/geom/util/PolygonExtracter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AF90774E416349ACBFBADB27 /* ShortCircuitedGeometryVisitor.h */ = {isa = PBXFileReference; name = "ShortCircuitedGeometryVisitor.h"; path = "cordova-spatialite-storage/common/geos/geom/util/ShortCircuitedGeometryVisitor.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3E47E566BD404052A74E5EBB /* SineStarFactory.h */ = {isa = PBXFileReference; name = "SineStarFactory.h"; path = "cordova-spatialite-storage/common/geos/geom/util/SineStarFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		468F007207BC44748182924F /* Depth.h */ = {isa = PBXFileReference; name = "Depth.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Depth.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		41790E0464994E069D6605D3 /* DirectedEdge.h */ = {isa = PBXFileReference; name = "DirectedEdge.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/DirectedEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		05915C321EBB436F9E6204D1 /* DirectedEdge.inl */ = {isa = PBXFileReference; name = "DirectedEdge.inl"; path = "cordova-spatialite-storage/common/geos/geomgraph/DirectedEdge.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		639E553F403545D69416B4F6 /* DirectedEdgeStar.h */ = {isa = PBXFileReference; name = "DirectedEdgeStar.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/DirectedEdgeStar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		56110F0DCD9640D4A463C50B /* Edge.h */ = {isa = PBXFileReference; name = "Edge.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Edge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		445C92EBFC514FADA6D7328F /* EdgeEnd.h */ = {isa = PBXFileReference; name = "EdgeEnd.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeEnd.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		38300429A0914827883EBE35 /* EdgeEndStar.h */ = {isa = PBXFileReference; name = "EdgeEndStar.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeEndStar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		44ACF8F3997648A2BB9760BF /* EdgeIntersection.h */ = {isa = PBXFileReference; name = "EdgeIntersection.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeIntersection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3EA5FDECED9F443C99879719 /* EdgeIntersectionList.h */ = {isa = PBXFileReference; name = "EdgeIntersectionList.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeIntersectionList.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C17786D9287742F1BF5CE192 /* EdgeList.h */ = {isa = PBXFileReference; name = "EdgeList.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeList.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		92D538D7600848E2A6F35EEB /* EdgeNodingValidator.h */ = {isa = PBXFileReference; name = "EdgeNodingValidator.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeNodingValidator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		59C3EAE9C3A84423AA006B0F /* EdgeRing.h */ = {isa = PBXFileReference; name = "EdgeRing.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/EdgeRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9555C976C4C948ADBFEE7D9C /* GeometryGraph.h */ = {isa = PBXFileReference; name = "GeometryGraph.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/GeometryGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B00FE18A119B42378A9AC75D /* GeometryGraph.inl */ = {isa = PBXFileReference; name = "GeometryGraph.inl"; path = "cordova-spatialite-storage/common/geos/geomgraph/GeometryGraph.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC258898F46845398D01A959 /* GraphComponent.h */ = {isa = PBXFileReference; name = "GraphComponent.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/GraphComponent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		14E81265C7E34952BDC71223 /* Label.h */ = {isa = PBXFileReference; name = "Label.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Label.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		35915886F3454136B2520627 /* Node.h */ = {isa = PBXFileReference; name = "Node.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Node.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3956CDC9400148AF8482CA6B /* NodeFactory.h */ = {isa = PBXFileReference; name = "NodeFactory.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/NodeFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		500A15770A9846CC8FCD0426 /* NodeMap.h */ = {isa = PBXFileReference; name = "NodeMap.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/NodeMap.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D44C42E321E64107ABD5A8E6 /* PlanarGraph.h */ = {isa = PBXFileReference; name = "PlanarGraph.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/PlanarGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		93E633EE0A524964B8170143 /* Position.h */ = {isa = PBXFileReference; name = "Position.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Position.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C0D6EB15C3FC4B8198C7A359 /* Quadrant.h */ = {isa = PBXFileReference; name = "Quadrant.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/Quadrant.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AEA48529CD9C4474AC37F50F /* TopologyLocation.h */ = {isa = PBXFileReference; name = "TopologyLocation.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/TopologyLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		97E09CFA077A4D068F40268F /* EdgeSetIntersector.h */ = {isa = PBXFileReference; name = "EdgeSetIntersector.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/EdgeSetIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		06461F52C46644F9A58451E2 /* MonotoneChain.h */ = {isa = PBXFileReference; name = "MonotoneChain.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/MonotoneChain.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		02EAFE63DAAB44CCAC1E96B3 /* MonotoneChainEdge.h */ = {isa = PBXFileReference; name = "MonotoneChainEdge.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/MonotoneChainEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7B36C84C1F8490A851D9A38 /* MonotoneChainIndexer.h */ = {isa = PBXFileReference; name = "MonotoneChainIndexer.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/MonotoneChainIndexer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9990DE50B82B49749263D91D /* SegmentIntersector.h */ = {isa = PBXFileReference; name = "SegmentIntersector.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SegmentIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0E431BD4E4C44AE785FB4933 /* SimpleEdgeSetIntersector.h */ = {isa = PBXFileReference; name = "SimpleEdgeSetIntersector.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SimpleEdgeSetIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		38445F9566F8492BB530BFB1 /* SimpleMCSweepLineIntersector.h */ = {isa = PBXFileReference; name = "SimpleMCSweepLineIntersector.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SimpleMCSweepLineIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E14E95135DA941F5B44E87E9 /* SimpleSweepLineIntersector.h */ = {isa = PBXFileReference; name = "SimpleSweepLineIntersector.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SimpleSweepLineIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71F53A30FDE942A38D0F820D /* SweepLineEvent.h */ = {isa = PBXFileReference; name = "SweepLineEvent.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SweepLineEvent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		250D293CA5014B14B6282A8A /* SweepLineEventObj.h */ = {isa = PBXFileReference; name = "SweepLineEventObj.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SweepLineEventObj.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B7D8CC4BA28C4C7D9481A548 /* SweepLineSegment.h */ = {isa = PBXFileReference; name = "SweepLineSegment.h"; path = "cordova-spatialite-storage/common/geos/geomgraph/index/SweepLineSegment.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6FF65645E1FE454C861D4B9A /* ItemVisitor.h */ = {isa = PBXFileReference; name = "ItemVisitor.h"; path = "cordova-spatialite-storage/common/geos/index/ItemVisitor.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B895C2F69B54485280256A20 /* SpatialIndex.h */ = {isa = PBXFileReference; name = "SpatialIndex.h"; path = "cordova-spatialite-storage/common/geos/index/SpatialIndex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		994E06D2054B4823B21B8BDC /* Bintree.h */ = {isa = PBXFileReference; name = "Bintree.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/Bintree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		25014851B07F46C4BDD4BBD1 /* Interval.h */ = {isa = PBXFileReference; name = "Interval.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/Interval.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0636ED95A81B40B8B2813E13 /* Key.h */ = {isa = PBXFileReference; name = "Key.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/Key.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4CB02AB47B4340178286524E /* Node.h */ = {isa = PBXFileReference; name = "Node.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/Node.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		19AA51600BAB473F8E6F92E7 /* NodeBase.h */ = {isa = PBXFileReference; name = "NodeBase.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/NodeBase.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		94930007C29B47F4A7C401E4 /* Root.h */ = {isa = PBXFileReference; name = "Root.h"; path = "cordova-spatialite-storage/common/geos/index/bintree/Root.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E80B46FFC9C0414583728ED0 /* MonotoneChain.h */ = {isa = PBXFileReference; name = "MonotoneChain.h"; path = "cordova-spatialite-storage/common/geos/index/chain/MonotoneChain.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D246BC2FB89C4BA58B7D6F51 /* MonotoneChainBuilder.h */ = {isa = PBXFileReference; name = "MonotoneChainBuilder.h"; path = "cordova-spatialite-storage/common/geos/index/chain/MonotoneChainBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		532CE3BFDC1A4EC297B4A783 /* MonotoneChainOverlapAction.h */ = {isa = PBXFileReference; name = "MonotoneChainOverlapAction.h"; path = "cordova-spatialite-storage/common/geos/index/chain/MonotoneChainOverlapAction.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		688A8C5BE27D445EA8AD33B9 /* MonotoneChainSelectAction.h */ = {isa = PBXFileReference; name = "MonotoneChainSelectAction.h"; path = "cordova-spatialite-storage/common/geos/index/chain/MonotoneChainSelectAction.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A59D49D8F7454B31A4351641 /* IntervalRTreeBranchNode.h */ = {isa = PBXFileReference; name = "IntervalRTreeBranchNode.h"; path = "cordova-spatialite-storage/common/geos/index/intervalrtree/IntervalRTreeBranchNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E601E441A751443DB22DB170 /* IntervalRTreeLeafNode.h */ = {isa = PBXFileReference; name = "IntervalRTreeLeafNode.h"; path = "cordova-spatialite-storage/common/geos/index/intervalrtree/IntervalRTreeLeafNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BF4E0F027DD2490986C4CB79 /* IntervalRTreeNode.h */ = {isa = PBXFileReference; name = "IntervalRTreeNode.h"; path = "cordova-spatialite-storage/common/geos/index/intervalrtree/IntervalRTreeNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3293D4DADE6A47BAAF1C025E /* SortedPackedIntervalRTree.h */ = {isa = PBXFileReference; name = "SortedPackedIntervalRTree.h"; path = "cordova-spatialite-storage/common/geos/index/intervalrtree/SortedPackedIntervalRTree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7EAFF07FA42C465C9CE5B9AF /* DoubleBits.h */ = {isa = PBXFileReference; name = "DoubleBits.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/DoubleBits.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		65FE83DBEE0B4A96A2F0E959 /* IntervalSize.h */ = {isa = PBXFileReference; name = "IntervalSize.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/IntervalSize.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C4AFC35D41DB4573943D2220 /* Key.h */ = {isa = PBXFileReference; name = "Key.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/Key.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6AAB602942F34039A2AFC145 /* Node.h */ = {isa = PBXFileReference; name = "Node.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/Node.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C31F8D7482FD40A6A1982B33 /* NodeBase.h */ = {isa = PBXFileReference; name = "NodeBase.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/NodeBase.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F3B1902AC3004F73A6DC1159 /* Quadtree.h */ = {isa = PBXFileReference; name = "Quadtree.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/Quadtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ADD57FFCED204500B2CC1B41 /* Root.h */ = {isa = PBXFileReference; name = "Root.h"; path = "cordova-spatialite-storage/common/geos/index/quadtree/Root.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FA9AA81B015740CDAB0735E0 /* AbstractNode.h */ = {isa = PBXFileReference; name = "AbstractNode.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/AbstractNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7712928288DB484881BC3AF7 /* AbstractSTRtree.h */ = {isa = PBXFileReference; name = "AbstractSTRtree.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/AbstractSTRtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5E8B552A2FEB48DB8438A306 /* Boundable.h */ = {isa = PBXFileReference; name = "Boundable.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/Boundable.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D050A48D472D45A3B98F163E /* Interval.h */ = {isa = PBXFileReference; name = "Interval.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/Interval.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9CAA40027CF44B85BEDE5565 /* ItemBoundable.h */ = {isa = PBXFileReference; name = "ItemBoundable.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/ItemBoundable.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E2B7C28D4E514135A35DFA25 /* SIRtree.h */ = {isa = PBXFileReference; name = "SIRtree.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/SIRtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2BEAB4200FE84150AE2D93B6 /* STRtree.h */ = {isa = PBXFileReference; name = "STRtree.h"; path = "cordova-spatialite-storage/common/geos/index/strtree/STRtree.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BE2DE9988B8F4B55B1DA7A58 /* SweepLineEvent.h */ = {isa = PBXFileReference; name = "SweepLineEvent.h"; path = "cordova-spatialite-storage/common/geos/index/sweepline/SweepLineEvent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F083B3AC1D584F85A5322751 /* SweepLineIndex.h */ = {isa = PBXFileReference; name = "SweepLineIndex.h"; path = "cordova-spatialite-storage/common/geos/index/sweepline/SweepLineIndex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		172BA69E4D5E4F42A87D3CD0 /* SweepLineInterval.h */ = {isa = PBXFileReference; name = "SweepLineInterval.h"; path = "cordova-spatialite-storage/common/geos/index/sweepline/SweepLineInterval.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C02E0CD65D944661924B099F /* SweepLineOverlapAction.h */ = {isa = PBXFileReference; name = "SweepLineOverlapAction.h"; path = "cordova-spatialite-storage/common/geos/index/sweepline/SweepLineOverlapAction.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EA622538AF2F41178AA076D0 /* ByteOrderDataInStream.h */ = {isa = PBXFileReference; name = "ByteOrderDataInStream.h"; path = "cordova-spatialite-storage/common/geos/io/ByteOrderDataInStream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		24F145318EA9445FBBF8269F /* ByteOrderDataInStream.inl */ = {isa = PBXFileReference; name = "ByteOrderDataInStream.inl"; path = "cordova-spatialite-storage/common/geos/io/ByteOrderDataInStream.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C443CDF9A8BC4587B7468EE3 /* ByteOrderValues.h */ = {isa = PBXFileReference; name = "ByteOrderValues.h"; path = "cordova-spatialite-storage/common/geos/io/ByteOrderValues.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6D052F02D45D41DF877012E6 /* CLocalizer.h */ = {isa = PBXFileReference; name = "CLocalizer.h"; path = "cordova-spatialite-storage/common/geos/io/CLocalizer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C66C024C923B4F8CA7335C97 /* ParseException.h */ = {isa = PBXFileReference; name = "ParseException.h"; path = "cordova-spatialite-storage/common/geos/io/ParseException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		49B20A1D28ED4245B90FD16B /* StringTokenizer.h */ = {isa = PBXFileReference; name = "StringTokenizer.h"; path = "cordova-spatialite-storage/common/geos/io/StringTokenizer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		93409F88B17B46CDAB619B5E /* WKBConstants.h */ = {isa = PBXFileReference; name = "WKBConstants.h"; path = "cordova-spatialite-storage/common/geos/io/WKBConstants.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DA997DD658C34727823B6297 /* WKBReader.h */ = {isa = PBXFileReference; name = "WKBReader.h"; path = "cordova-spatialite-storage/common/geos/io/WKBReader.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0B6D73C4F093483493E80B6D /* WKBWriter.h */ = {isa = PBXFileReference; name = "WKBWriter.h"; path = "cordova-spatialite-storage/common/geos/io/WKBWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E850C753CF444EAFBB747BF6 /* WKTReader.h */ = {isa = PBXFileReference; name = "WKTReader.h"; path = "cordova-spatialite-storage/common/geos/io/WKTReader.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7A25764E142C41D88838E274 /* WKTReader.inl */ = {isa = PBXFileReference; name = "WKTReader.inl"; path = "cordova-spatialite-storage/common/geos/io/WKTReader.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C8A099311F6421CB648E0B0 /* WKTWriter.h */ = {isa = PBXFileReference; name = "WKTWriter.h"; path = "cordova-spatialite-storage/common/geos/io/WKTWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		28E8140A7A1F4396A476C0CD /* Writer.h */ = {isa = PBXFileReference; name = "Writer.h"; path = "cordova-spatialite-storage/common/geos/io/Writer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5A44EFFF7E93493686798244 /* ExtractLineByLocation.h */ = {isa = PBXFileReference; name = "ExtractLineByLocation.h"; path = "cordova-spatialite-storage/common/geos/linearref/ExtractLineByLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E640317BB0FB438DBD3506F9 /* LengthIndexedLine.h */ = {isa = PBXFileReference; name = "LengthIndexedLine.h"; path = "cordova-spatialite-storage/common/geos/linearref/LengthIndexedLine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3C7BB676E7AE41E1B05D140E /* LengthIndexOfPoint.h */ = {isa = PBXFileReference; name = "LengthIndexOfPoint.h"; path = "cordova-spatialite-storage/common/geos/linearref/LengthIndexOfPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		166563C65E8E4C6C8953ECFE /* LengthLocationMap.h */ = {isa = PBXFileReference; name = "LengthLocationMap.h"; path = "cordova-spatialite-storage/common/geos/linearref/LengthLocationMap.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FF2D62413E824A66B166BDD8 /* LinearGeometryBuilder.h */ = {isa = PBXFileReference; name = "LinearGeometryBuilder.h"; path = "cordova-spatialite-storage/common/geos/linearref/LinearGeometryBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		86F6563EA496418591360EBF /* LinearIterator.h */ = {isa = PBXFileReference; name = "LinearIterator.h"; path = "cordova-spatialite-storage/common/geos/linearref/LinearIterator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		21F81DBE43354EF2ABC2475E /* LinearLocation.h */ = {isa = PBXFileReference; name = "LinearLocation.h"; path = "cordova-spatialite-storage/common/geos/linearref/LinearLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5BC4B150409247FEBB56E51E /* LocationIndexedLine.h */ = {isa = PBXFileReference; name = "LocationIndexedLine.h"; path = "cordova-spatialite-storage/common/geos/linearref/LocationIndexedLine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1B8355E8D66647939C1FF118 /* LocationIndexOfLine.h */ = {isa = PBXFileReference; name = "LocationIndexOfLine.h"; path = "cordova-spatialite-storage/common/geos/linearref/LocationIndexOfLine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		75FD13A8CEA64DDAA930F531 /* LocationIndexOfPoint.h */ = {isa = PBXFileReference; name = "LocationIndexOfPoint.h"; path = "cordova-spatialite-storage/common/geos/linearref/LocationIndexOfPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F84257185D3745F88CBF3C81 /* BasicSegmentString.h */ = {isa = PBXFileReference; name = "BasicSegmentString.h"; path = "cordova-spatialite-storage/common/geos/noding/BasicSegmentString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3BE76FFE15434781B7AAD280 /* FastNodingValidator.h */ = {isa = PBXFileReference; name = "FastNodingValidator.h"; path = "cordova-spatialite-storage/common/geos/noding/FastNodingValidator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		331206BFE47F43D9997D3D49 /* FastSegmentSetIntersectionFinder.h */ = {isa = PBXFileReference; name = "FastSegmentSetIntersectionFinder.h"; path = "cordova-spatialite-storage/common/geos/noding/FastSegmentSetIntersectionFinder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E1C780850B5341BE88B26CF9 /* GeometryNoder.h */ = {isa = PBXFileReference; name = "GeometryNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/GeometryNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1EDBA725E7FD4D82A38F27A7 /* IntersectionAdder.h */ = {isa = PBXFileReference; name = "IntersectionAdder.h"; path = "cordova-spatialite-storage/common/geos/noding/IntersectionAdder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5D2E38FC253145429C0B80E9 /* IntersectionFinderAdder.h */ = {isa = PBXFileReference; name = "IntersectionFinderAdder.h"; path = "cordova-spatialite-storage/common/geos/noding/IntersectionFinderAdder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A6F7D95F2A544403A45173EB /* IteratedNoder.h */ = {isa = PBXFileReference; name = "IteratedNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/IteratedNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6DA22A1BD0F24600855EEEE4 /* MCIndexNoder.h */ = {isa = PBXFileReference; name = "MCIndexNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/MCIndexNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6619B8E4D37141DD836271BA /* MCIndexNoder.inl */ = {isa = PBXFileReference; name = "MCIndexNoder.inl"; path = "cordova-spatialite-storage/common/geos/noding/MCIndexNoder.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		208E12636FC9446398526FDC /* MCIndexSegmentSetMutualIntersector.h */ = {isa = PBXFileReference; name = "MCIndexSegmentSetMutualIntersector.h"; path = "cordova-spatialite-storage/common/geos/noding/MCIndexSegmentSetMutualIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5462012C83EE4669BA229AF5 /* NodableSegmentString.h */ = {isa = PBXFileReference; name = "NodableSegmentString.h"; path = "cordova-spatialite-storage/common/geos/noding/NodableSegmentString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4EF5B76346604693B64826B9 /* NodedSegmentString.h */ = {isa = PBXFileReference; name = "NodedSegmentString.h"; path = "cordova-spatialite-storage/common/geos/noding/NodedSegmentString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		769199FCEE59480786F2A06B /* Noder.h */ = {isa = PBXFileReference; name = "Noder.h"; path = "cordova-spatialite-storage/common/geos/noding/Noder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CCE1D9C4FF9D480794584D76 /* NodingValidator.h */ = {isa = PBXFileReference; name = "NodingValidator.h"; path = "cordova-spatialite-storage/common/geos/noding/NodingValidator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		11C42FFBC2F24E46BB29AB2E /* Octant.h */ = {isa = PBXFileReference; name = "Octant.h"; path = "cordova-spatialite-storage/common/geos/noding/Octant.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6F39FA12B94C4CCD9487D01C /* OrientedCoordinateArray.h */ = {isa = PBXFileReference; name = "OrientedCoordinateArray.h"; path = "cordova-spatialite-storage/common/geos/noding/OrientedCoordinateArray.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		980FFAFA23524A2EACE6FF40 /* ScaledNoder.h */ = {isa = PBXFileReference; name = "ScaledNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/ScaledNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DBC406DB0CC84316B37B4923 /* SegmentIntersectionDetector.h */ = {isa = PBXFileReference; name = "SegmentIntersectionDetector.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentIntersectionDetector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		413269DEEEA2413FA8017BC1 /* SegmentIntersector.h */ = {isa = PBXFileReference; name = "SegmentIntersector.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		48AD06E934134A6ABE006229 /* SegmentNode.h */ = {isa = PBXFileReference; name = "SegmentNode.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F85F38683FF3461EAF0A8DFE /* SegmentNodeList.h */ = {isa = PBXFileReference; name = "SegmentNodeList.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentNodeList.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		48AACBC426C348FEBD52DB34 /* SegmentPointComparator.h */ = {isa = PBXFileReference; name = "SegmentPointComparator.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentPointComparator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		810F04629CDA47ABB5519100 /* SegmentSetMutualIntersector.h */ = {isa = PBXFileReference; name = "SegmentSetMutualIntersector.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentSetMutualIntersector.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7DE7AA52DD3D41C3A87FF0CC /* SegmentString.h */ = {isa = PBXFileReference; name = "SegmentString.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1A0C1097805044E2A5FEE469 /* SegmentStringUtil.h */ = {isa = PBXFileReference; name = "SegmentStringUtil.h"; path = "cordova-spatialite-storage/common/geos/noding/SegmentStringUtil.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		95F6B3BA65034E108D35F8F2 /* SimpleNoder.h */ = {isa = PBXFileReference; name = "SimpleNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/SimpleNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1D34E2EE099E41E084CB2258 /* SingleInteriorIntersectionFinder.h */ = {isa = PBXFileReference; name = "SingleInteriorIntersectionFinder.h"; path = "cordova-spatialite-storage/common/geos/noding/SingleInteriorIntersectionFinder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1B66F26ED4E942428454F5F1 /* SinglePassNoder.h */ = {isa = PBXFileReference; name = "SinglePassNoder.h"; path = "cordova-spatialite-storage/common/geos/noding/SinglePassNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3098B36C826E4189B8A0792D /* HotPixel.h */ = {isa = PBXFileReference; name = "HotPixel.h"; path = "cordova-spatialite-storage/common/geos/noding/snapround/HotPixel.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C728D2E2F5E8467F93B95F26 /* HotPixel.inl */ = {isa = PBXFileReference; name = "HotPixel.inl"; path = "cordova-spatialite-storage/common/geos/noding/snapround/HotPixel.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DB4BF8D4A9C4C91A5911EE5 /* MCIndexPointSnapper.h */ = {isa = PBXFileReference; name = "MCIndexPointSnapper.h"; path = "cordova-spatialite-storage/common/geos/noding/snapround/MCIndexPointSnapper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8A8E7E7D672A4D569CB2EDE2 /* MCIndexSnapRounder.h */ = {isa = PBXFileReference; name = "MCIndexSnapRounder.h"; path = "cordova-spatialite-storage/common/geos/noding/snapround/MCIndexSnapRounder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		998031CF2C7845D58141667F /* SimpleSnapRounder.h */ = {isa = PBXFileReference; name = "SimpleSnapRounder.h"; path = "cordova-spatialite-storage/common/geos/noding/snapround/SimpleSnapRounder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		95C6FF27B74A4870A1C61E3A /* GeometryGraphOperation.h */ = {isa = PBXFileReference; name = "GeometryGraphOperation.h"; path = "cordova-spatialite-storage/common/geos/operation/GeometryGraphOperation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D1DC2B6F29714C5DA1C4CC1B /* IsSimpleOp.h */ = {isa = PBXFileReference; name = "IsSimpleOp.h"; path = "cordova-spatialite-storage/common/geos/operation/IsSimpleOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B85E1F92F75D48E5947AF47B /* BufferBuilder.h */ = {isa = PBXFileReference; name = "BufferBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/BufferBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BCF01EAEB44D438799D058B0 /* BufferInputLineSimplifier.h */ = {isa = PBXFileReference; name = "BufferInputLineSimplifier.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/BufferInputLineSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7F63C682D1D344D4BDC17109 /* BufferOp.h */ = {isa = PBXFileReference; name = "BufferOp.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/BufferOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D253C3D127154388B1FEDE54 /* BufferParameters.h */ = {isa = PBXFileReference; name = "BufferParameters.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/BufferParameters.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A5612D801CB4430BBF17AC58 /* BufferSubgraph.h */ = {isa = PBXFileReference; name = "BufferSubgraph.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/BufferSubgraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1D18E87D9AC04511BA991487 /* OffsetCurveBuilder.h */ = {isa = PBXFileReference; name = "OffsetCurveBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/OffsetCurveBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D48ED4C843334690B8D3F22F /* OffsetCurveSetBuilder.h */ = {isa = PBXFileReference; name = "OffsetCurveSetBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/OffsetCurveSetBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6EC93E62CCAE4A8A8336BD11 /* OffsetSegmentGenerator.h */ = {isa = PBXFileReference; name = "OffsetSegmentGenerator.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/OffsetSegmentGenerator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0730044511C44CD2A1D6166B /* OffsetSegmentString.h */ = {isa = PBXFileReference; name = "OffsetSegmentString.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/OffsetSegmentString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		15E550BD6331489DA58AA61C /* RightmostEdgeFinder.h */ = {isa = PBXFileReference; name = "RightmostEdgeFinder.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/RightmostEdgeFinder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E3F96157C6AF47AE9F1C1590 /* SubgraphDepthLocater.h */ = {isa = PBXFileReference; name = "SubgraphDepthLocater.h"; path = "cordova-spatialite-storage/common/geos/operation/buffer/SubgraphDepthLocater.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		97979F11D1B4496C87A67973 /* ConnectedElementLocationFilter.h */ = {isa = PBXFileReference; name = "ConnectedElementLocationFilter.h"; path = "cordova-spatialite-storage/common/geos/operation/distance/ConnectedElementLocationFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A252C4DA8A024BF3AAB03EF6 /* ConnectedElementPointFilter.h */ = {isa = PBXFileReference; name = "ConnectedElementPointFilter.h"; path = "cordova-spatialite-storage/common/geos/operation/distance/ConnectedElementPointFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A09CB5D0CDCE4AFDB774D240 /* DistanceOp.h */ = {isa = PBXFileReference; name = "DistanceOp.h"; path = "cordova-spatialite-storage/common/geos/operation/distance/DistanceOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9A6D743BD1A44A4D90676C45 /* GeometryLocation.h */ = {isa = PBXFileReference; name = "GeometryLocation.h"; path = "cordova-spatialite-storage/common/geos/operation/distance/GeometryLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B648CF7C79AB49FF9685EE30 /* EdgeString.h */ = {isa = PBXFileReference; name = "EdgeString.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/EdgeString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		016D0CE3B3F14E4A8FFF841F /* LineMergeDirectedEdge.h */ = {isa = PBXFileReference; name = "LineMergeDirectedEdge.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/LineMergeDirectedEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CA876FF7B6314B428F2ED657 /* LineMergeEdge.h */ = {isa = PBXFileReference; name = "LineMergeEdge.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/LineMergeEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		58F540AAB5424857906D397A /* LineMergeGraph.h */ = {isa = PBXFileReference; name = "LineMergeGraph.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/LineMergeGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1FA41631C30F409597C5928C /* LineMerger.h */ = {isa = PBXFileReference; name = "LineMerger.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/LineMerger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F74E136EED404A19AB836538 /* LineSequencer.h */ = {isa = PBXFileReference; name = "LineSequencer.h"; path = "cordova-spatialite-storage/common/geos/operation/linemerge/LineSequencer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E0A03A46309A43CC887944A8 /* EdgeSetNoder.h */ = {isa = PBXFileReference; name = "EdgeSetNoder.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/EdgeSetNoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6AD2149D73B7409083D38FCF /* ElevationMatrix.h */ = {isa = PBXFileReference; name = "ElevationMatrix.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/ElevationMatrix.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B039F4BAE86F4A2C8EEAACAB /* ElevationMatrixCell.h */ = {isa = PBXFileReference; name = "ElevationMatrixCell.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/ElevationMatrixCell.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		047903E5122346CF85A22068 /* FuzzyPointLocator.h */ = {isa = PBXFileReference; name = "FuzzyPointLocator.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/FuzzyPointLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71363C9822D34E569767E39E /* LineBuilder.h */ = {isa = PBXFileReference; name = "LineBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/LineBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CD034791AAF44B549480F031 /* MaximalEdgeRing.h */ = {isa = PBXFileReference; name = "MaximalEdgeRing.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/MaximalEdgeRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1CC9E9FB854340F8B86B8EC6 /* MinimalEdgeRing.h */ = {isa = PBXFileReference; name = "MinimalEdgeRing.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/MinimalEdgeRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FAEC43E5CE274E64B88811DF /* MinimalEdgeRing.inl */ = {isa = PBXFileReference; name = "MinimalEdgeRing.inl"; path = "cordova-spatialite-storage/common/geos/operation/overlay/MinimalEdgeRing.inl"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DA9447AEC8C4F70A2B36DAF /* OffsetPointGenerator.h */ = {isa = PBXFileReference; name = "OffsetPointGenerator.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/OffsetPointGenerator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5FB05F7DC4BC43E7A8D08C42 /* OverlayNodeFactory.h */ = {isa = PBXFileReference; name = "OverlayNodeFactory.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/OverlayNodeFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		593FE3B90DD34FF084147AF9 /* OverlayOp.h */ = {isa = PBXFileReference; name = "OverlayOp.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/OverlayOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		946975F82D9E4D48B607933C /* OverlayResultValidator.h */ = {isa = PBXFileReference; name = "OverlayResultValidator.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/OverlayResultValidator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5E3B4C04BE434B9A81CF14D1 /* PointBuilder.h */ = {isa = PBXFileReference; name = "PointBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/PointBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		99231592698D48B0A68483CC /* PolygonBuilder.h */ = {isa = PBXFileReference; name = "PolygonBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/PolygonBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9A69CC43241E45E4AF50AC1E /* GeometrySnapper.h */ = {isa = PBXFileReference; name = "GeometrySnapper.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/snap/GeometrySnapper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6CA1D22A15CE4781BFAD0128 /* LineStringSnapper.h */ = {isa = PBXFileReference; name = "LineStringSnapper.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/snap/LineStringSnapper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		48AD6E5C49AB44F9B3D69873 /* SnapIfNeededOverlayOp.h */ = {isa = PBXFileReference; name = "SnapIfNeededOverlayOp.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/snap/SnapIfNeededOverlayOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A19EDA608F154BAE94913F3E /* SnapOverlayOp.h */ = {isa = PBXFileReference; name = "SnapOverlayOp.h"; path = "cordova-spatialite-storage/common/geos/operation/overlay/snap/SnapOverlayOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		34514A6A6246445283901939 /* EdgeRing.h */ = {isa = PBXFileReference; name = "EdgeRing.h"; path = "cordova-spatialite-storage/common/geos/operation/polygonize/EdgeRing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C9C58E4F90CE49688D803DA6 /* PolygonizeDirectedEdge.h */ = {isa = PBXFileReference; name = "PolygonizeDirectedEdge.h"; path = "cordova-spatialite-storage/common/geos/operation/polygonize/PolygonizeDirectedEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A3B128AB56F34237B3BE20DA /* PolygonizeEdge.h */ = {isa = PBXFileReference; name = "PolygonizeEdge.h"; path = "cordova-spatialite-storage/common/geos/operation/polygonize/PolygonizeEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BEB9653BCB26438B8BC3336F /* PolygonizeGraph.h */ = {isa = PBXFileReference; name = "PolygonizeGraph.h"; path = "cordova-spatialite-storage/common/geos/operation/polygonize/PolygonizeGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A4E539A4F549424E918B3418 /* Polygonizer.h */ = {isa = PBXFileReference; name = "Polygonizer.h"; path = "cordova-spatialite-storage/common/geos/operation/polygonize/Polygonizer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4B5437F5AA104AE78B5BF768 /* RectangleContains.h */ = {isa = PBXFileReference; name = "RectangleContains.h"; path = "cordova-spatialite-storage/common/geos/operation/predicate/RectangleContains.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7DFF85EB87444CCA9059988 /* RectangleIntersects.h */ = {isa = PBXFileReference; name = "RectangleIntersects.h"; path = "cordova-spatialite-storage/common/geos/operation/predicate/RectangleIntersects.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F55678429EBC445E91D733AF /* SegmentIntersectionTester.h */ = {isa = PBXFileReference; name = "SegmentIntersectionTester.h"; path = "cordova-spatialite-storage/common/geos/operation/predicate/SegmentIntersectionTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8BC66E07527B4E0B93303674 /* EdgeEndBuilder.h */ = {isa = PBXFileReference; name = "EdgeEndBuilder.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/EdgeEndBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2205247DF10E403790700C29 /* EdgeEndBundle.h */ = {isa = PBXFileReference; name = "EdgeEndBundle.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/EdgeEndBundle.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7C468E971C494AD99B551D6C /* EdgeEndBundleStar.h */ = {isa = PBXFileReference; name = "EdgeEndBundleStar.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/EdgeEndBundleStar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		17CD4D6330B442E990920C4E /* RelateComputer.h */ = {isa = PBXFileReference; name = "RelateComputer.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/RelateComputer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		64F6B339FB8D43C49A95996F /* RelateNode.h */ = {isa = PBXFileReference; name = "RelateNode.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/RelateNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DCE8FA8F3C3544509DA4CAA5 /* RelateNodeFactory.h */ = {isa = PBXFileReference; name = "RelateNodeFactory.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/RelateNodeFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9A744EBE61FC4373801EC554 /* RelateNodeGraph.h */ = {isa = PBXFileReference; name = "RelateNodeGraph.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/RelateNodeGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D79894AB5B364FD7894A6F7A /* RelateOp.h */ = {isa = PBXFileReference; name = "RelateOp.h"; path = "cordova-spatialite-storage/common/geos/operation/relate/RelateOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0D3D69ECBC1A4C81978997DC /* SharedPathsOp.h */ = {isa = PBXFileReference; name = "SharedPathsOp.h"; path = "cordova-spatialite-storage/common/geos/operation/sharedpaths/SharedPathsOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ACF86B98E0C2425789FD03E3 /* CascadedPolygonUnion.h */ = {isa = PBXFileReference; name = "CascadedPolygonUnion.h"; path = "cordova-spatialite-storage/common/geos/operation/union/CascadedPolygonUnion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F2A95204923248D3BEC337AC /* CascadedUnion.h */ = {isa = PBXFileReference; name = "CascadedUnion.h"; path = "cordova-spatialite-storage/common/geos/operation/union/CascadedUnion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5F1A32A46014434389D13217 /* GeometryListHolder.h */ = {isa = PBXFileReference; name = "GeometryListHolder.h"; path = "cordova-spatialite-storage/common/geos/operation/union/GeometryListHolder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F7AA6B6DEA364E7ABA258573 /* PointGeometryUnion.h */ = {isa = PBXFileReference; name = "PointGeometryUnion.h"; path = "cordova-spatialite-storage/common/geos/operation/union/PointGeometryUnion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B588996ECA6C41D581103464 /* UnaryUnionOp.h */ = {isa = PBXFileReference; name = "UnaryUnionOp.h"; path = "cordova-spatialite-storage/common/geos/operation/union/UnaryUnionOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B40C7BF3C84A49C39E5FDDF9 /* ConnectedInteriorTester.h */ = {isa = PBXFileReference; name = "ConnectedInteriorTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/ConnectedInteriorTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		04124420DE794D0F9992C963 /* ConsistentAreaTester.h */ = {isa = PBXFileReference; name = "ConsistentAreaTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/ConsistentAreaTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7030238BD4334C6A9DDE2582 /* IsValidOp.h */ = {isa = PBXFileReference; name = "IsValidOp.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/IsValidOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B21BD9A224124587900F0DAC /* QuadtreeNestedRingTester.h */ = {isa = PBXFileReference; name = "QuadtreeNestedRingTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/QuadtreeNestedRingTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F77DB4EFFEB84348A744C6CA /* RepeatedPointTester.h */ = {isa = PBXFileReference; name = "RepeatedPointTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/RepeatedPointTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E91E7A1E203F469CA6431A0C /* SimpleNestedRingTester.h */ = {isa = PBXFileReference; name = "SimpleNestedRingTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/SimpleNestedRingTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4744461044FA4598920C5691 /* SweeplineNestedRingTester.h */ = {isa = PBXFileReference; name = "SweeplineNestedRingTester.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/SweeplineNestedRingTester.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		31E23FA24231418FA978CA74 /* TopologyValidationError.h */ = {isa = PBXFileReference; name = "TopologyValidationError.h"; path = "cordova-spatialite-storage/common/geos/operation/valid/TopologyValidationError.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		73FF7ABE47214278848C443D /* DirectedEdge.h */ = {isa = PBXFileReference; name = "DirectedEdge.h"; path = "cordova-spatialite-storage/common/geos/planargraph/DirectedEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		12F63428D2E241848AE617B0 /* DirectedEdgeStar.h */ = {isa = PBXFileReference; name = "DirectedEdgeStar.h"; path = "cordova-spatialite-storage/common/geos/planargraph/DirectedEdgeStar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		33512C16EF1D4262B629C331 /* Edge.h */ = {isa = PBXFileReference; name = "Edge.h"; path = "cordova-spatialite-storage/common/geos/planargraph/Edge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AB848C66AC6B4C90BB753235 /* GraphComponent.h */ = {isa = PBXFileReference; name = "GraphComponent.h"; path = "cordova-spatialite-storage/common/geos/planargraph/GraphComponent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5F5F3628F9A7408FA406F6C6 /* Node.h */ = {isa = PBXFileReference; name = "Node.h"; path = "cordova-spatialite-storage/common/geos/planargraph/Node.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		69D646BE3ED0458CA5E70E76 /* NodeMap.h */ = {isa = PBXFileReference; name = "NodeMap.h"; path = "cordova-spatialite-storage/common/geos/planargraph/NodeMap.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		517BEAEC992E4A9CB8B7A252 /* PlanarGraph.h */ = {isa = PBXFileReference; name = "PlanarGraph.h"; path = "cordova-spatialite-storage/common/geos/planargraph/PlanarGraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A70CE8976E774459A844E9C2 /* Subgraph.h */ = {isa = PBXFileReference; name = "Subgraph.h"; path = "cordova-spatialite-storage/common/geos/planargraph/Subgraph.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF698C79CB1449B1BEB39E7D /* ConnectedSubgraphFinder.h */ = {isa = PBXFileReference; name = "ConnectedSubgraphFinder.h"; path = "cordova-spatialite-storage/common/geos/planargraph/algorithm/ConnectedSubgraphFinder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4D0EE30F62734C6B911813E5 /* CommonBits.h */ = {isa = PBXFileReference; name = "CommonBits.h"; path = "cordova-spatialite-storage/common/geos/precision/CommonBits.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E84EDD18C89D49AAA2E345BB /* CommonBitsOp.h */ = {isa = PBXFileReference; name = "CommonBitsOp.h"; path = "cordova-spatialite-storage/common/geos/precision/CommonBitsOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CB98CCA9B5AA4E51AF2243F8 /* CommonBitsRemover.h */ = {isa = PBXFileReference; name = "CommonBitsRemover.h"; path = "cordova-spatialite-storage/common/geos/precision/CommonBitsRemover.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E6CC1CF9C1414A1BBE218B9F /* EnhancedPrecisionOp.h */ = {isa = PBXFileReference; name = "EnhancedPrecisionOp.h"; path = "cordova-spatialite-storage/common/geos/precision/EnhancedPrecisionOp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C00FBCD7F4D84B2DA2578F58 /* GeometryPrecisionReducer.h */ = {isa = PBXFileReference; name = "GeometryPrecisionReducer.h"; path = "cordova-spatialite-storage/common/geos/precision/GeometryPrecisionReducer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FB2C94F72FFD42B2A2BD743D /* PrecisionReducerCoordinateOperation.h */ = {isa = PBXFileReference; name = "PrecisionReducerCoordinateOperation.h"; path = "cordova-spatialite-storage/common/geos/precision/PrecisionReducerCoordinateOperation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C77B626C9BA34D7785647893 /* SimpleGeometryPrecisionReducer.h */ = {isa = PBXFileReference; name = "SimpleGeometryPrecisionReducer.h"; path = "cordova-spatialite-storage/common/geos/precision/SimpleGeometryPrecisionReducer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		823AAC7DA2BF4C7BB8BC38EE /* DouglasPeuckerLineSimplifier.h */ = {isa = PBXFileReference; name = "DouglasPeuckerLineSimplifier.h"; path = "cordova-spatialite-storage/common/geos/simplify/DouglasPeuckerLineSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3B65F8482A60414391AEB998 /* DouglasPeuckerSimplifier.h */ = {isa = PBXFileReference; name = "DouglasPeuckerSimplifier.h"; path = "cordova-spatialite-storage/common/geos/simplify/DouglasPeuckerSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		43B8501E65194100A9B741DA /* LineSegmentIndex.h */ = {isa = PBXFileReference; name = "LineSegmentIndex.h"; path = "cordova-spatialite-storage/common/geos/simplify/LineSegmentIndex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0D50235411D44CBABA34BE39 /* TaggedLineSegment.h */ = {isa = PBXFileReference; name = "TaggedLineSegment.h"; path = "cordova-spatialite-storage/common/geos/simplify/TaggedLineSegment.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EE4B8CD30CCF4B2FB4BE98CB /* TaggedLinesSimplifier.h */ = {isa = PBXFileReference; name = "TaggedLinesSimplifier.h"; path = "cordova-spatialite-storage/common/geos/simplify/TaggedLinesSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		17103CC9675B4A3D9976571D /* TaggedLineString.h */ = {isa = PBXFileReference; name = "TaggedLineString.h"; path = "cordova-spatialite-storage/common/geos/simplify/TaggedLineString.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C6E6401516744A0AACA890A4 /* TaggedLineStringSimplifier.h */ = {isa = PBXFileReference; name = "TaggedLineStringSimplifier.h"; path = "cordova-spatialite-storage/common/geos/simplify/TaggedLineStringSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6A93C59F91704495A19095AE /* TopologyPreservingSimplifier.h */ = {isa = PBXFileReference; name = "TopologyPreservingSimplifier.h"; path = "cordova-spatialite-storage/common/geos/simplify/TopologyPreservingSimplifier.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B012EECF12EF44748CB7A7F1 /* DelaunayTriangulationBuilder.h */ = {isa = PBXFileReference; name = "DelaunayTriangulationBuilder.h"; path = "cordova-spatialite-storage/common/geos/triangulate/DelaunayTriangulationBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		96F41B85D2394F79BA8AF29C /* IncrementalDelaunayTriangulator.h */ = {isa = PBXFileReference; name = "IncrementalDelaunayTriangulator.h"; path = "cordova-spatialite-storage/common/geos/triangulate/IncrementalDelaunayTriangulator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1CF775C441524E33BF41C85E /* LastFoundQuadEdgeLocator.h */ = {isa = PBXFileReference; name = "LastFoundQuadEdgeLocator.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/LastFoundQuadEdgeLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F795918A4DF24FA8913C54EB /* LocateFailureException.h */ = {isa = PBXFileReference; name = "LocateFailureException.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/LocateFailureException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		80963839F7B9411BBE56E053 /* QuadEdge.h */ = {isa = PBXFileReference; name = "QuadEdge.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/QuadEdge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0E252F340DDC408D83B04945 /* QuadEdgeLocator.h */ = {isa = PBXFileReference; name = "QuadEdgeLocator.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/QuadEdgeLocator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4B82115B392D4F6FAC6C7EA2 /* QuadEdgeSubdivision.h */ = {isa = PBXFileReference; name = "QuadEdgeSubdivision.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/QuadEdgeSubdivision.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B0FD6558E76F4741BC788703 /* TrianglePredicate.h */ = {isa = PBXFileReference; name = "TrianglePredicate.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/TrianglePredicate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1044583328014037AA608920 /* TriangleVisitor.h */ = {isa = PBXFileReference; name = "TriangleVisitor.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/TriangleVisitor.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		145CF5DCAB8642BCBF8EB133 /* Vertex.h */ = {isa = PBXFileReference; name = "Vertex.h"; path = "cordova-spatialite-storage/common/geos/triangulate/quadedge/Vertex.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FC6858FB647D42258FEE995E /* Assert.h */ = {isa = PBXFileReference; name = "Assert.h"; path = "cordova-spatialite-storage/common/geos/util/Assert.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F60DBA911C7A4BD5BDB85CD1 /* AssertionFailedException.h */ = {isa = PBXFileReference; name = "AssertionFailedException.h"; path = "cordova-spatialite-storage/common/geos/util/AssertionFailedException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9AF608FAE2C24A42852FF18D /* CoordinateArrayFilter.h */ = {isa = PBXFileReference; name = "CoordinateArrayFilter.h"; path = "cordova-spatialite-storage/common/geos/util/CoordinateArrayFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		657D9A8FA8B942B3B179CC2E /* GeometricShapeFactory.h */ = {isa = PBXFileReference; name = "GeometricShapeFactory.h"; path = "cordova-spatialite-storage/common/geos/util/GeometricShapeFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		872B524416964FF7BE295E10 /* GEOSException.h */ = {isa = PBXFileReference; name = "GEOSException.h"; path = "cordova-spatialite-storage/common/geos/util/GEOSException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1323D53F57D14892BE3A36B5 /* IllegalArgumentException.h */ = {isa = PBXFileReference; name = "IllegalArgumentException.h"; path = "cordova-spatialite-storage/common/geos/util/IllegalArgumentException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		614AD76CEC3F40F79766933A /* IllegalStateException.h */ = {isa = PBXFileReference; name = "IllegalStateException.h"; path = "cordova-spatialite-storage/common/geos/util/IllegalStateException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		61625B7C33AF41D4B21F84D6 /* Interrupt.h */ = {isa = PBXFileReference; name = "Interrupt.h"; path = "cordova-spatialite-storage/common/geos/util/Interrupt.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3ABE3E8C08A54904B68177DB /* Machine.h */ = {isa = PBXFileReference; name = "Machine.h"; path = "cordova-spatialite-storage/common/geos/util/Machine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		10E102660F9E4703905852DD /* math.h */ = {isa = PBXFileReference; name = "math.h"; path = "cordova-spatialite-storage/common/geos/util/math.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EACC5F65112745908ABF0FA7 /* TopologyException.h */ = {isa = PBXFileReference; name = "TopologyException.h"; path = "cordova-spatialite-storage/common/geos/util/TopologyException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A2E29B77D7254E79A3C160EA /* UniqueCoordinateArrayFilter.h */ = {isa = PBXFileReference; name = "UniqueCoordinateArrayFilter.h"; path = "cordova-spatialite-storage/common/geos/util/UniqueCoordinateArrayFilter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FE571850157A4D23AAD9C414 /* UnsupportedOperationException.h */ = {isa = PBXFileReference; name = "UnsupportedOperationException.h"; path = "cordova-spatialite-storage/common/geos/util/UnsupportedOperationException.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A4E0BB4CD60E4B6599AD33E0 /* control_points.h */ = {isa = PBXFileReference; name = "control_points.h"; path = "cordova-spatialite-storage/common/spatialite/control_points.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FCD331387A974BEBB1F11205 /* debug.h */ = {isa = PBXFileReference; name = "debug.h"; path = "cordova-spatialite-storage/common/spatialite/debug.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7903B5411FDB4688AB9D4A3B /* gaiaaux.h */ = {isa = PBXFileReference; name = "gaiaaux.h"; path = "cordova-spatialite-storage/common/spatialite/gaiaaux.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		284EFE9B7E6F4E0CBFC5DF55 /* gaiaexif.h */ = {isa = PBXFileReference; name = "gaiaexif.h"; path = "cordova-spatialite-storage/common/spatialite/gaiaexif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F2CB98D2A9B749708A5EDA86 /* gaiageo.h */ = {isa = PBXFileReference; name = "gaiageo.h"; path = "cordova-spatialite-storage/common/spatialite/gaiageo.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2D1A4BF87B364ACAB0E58162 /* gaiamatrix.h */ = {isa = PBXFileReference; name = "gaiamatrix.h"; path = "cordova-spatialite-storage/common/spatialite/gaiamatrix.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		996C20775ACA452E950FD8A2 /* geopackage.h */ = {isa = PBXFileReference; name = "geopackage.h"; path = "cordova-spatialite-storage/common/spatialite/geopackage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7FBF5BFC6F6A457DB498A038 /* gg_advanced.h */ = {isa = PBXFileReference; name = "gg_advanced.h"; path = "cordova-spatialite-storage/common/spatialite/gg_advanced.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		042C72ECD52745C194E01420 /* gg_const.h */ = {isa = PBXFileReference; name = "gg_const.h"; path = "cordova-spatialite-storage/common/spatialite/gg_const.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		158526C7EB764D9592C9A910 /* gg_core.h */ = {isa = PBXFileReference; name = "gg_core.h"; path = "cordova-spatialite-storage/common/spatialite/gg_core.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		45666185512848659235785C /* gg_dxf.h */ = {isa = PBXFileReference; name = "gg_dxf.h"; path = "cordova-spatialite-storage/common/spatialite/gg_dxf.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E6102D2CC004464CA4817D36 /* gg_dynamic.h */ = {isa = PBXFileReference; name = "gg_dynamic.h"; path = "cordova-spatialite-storage/common/spatialite/gg_dynamic.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		11EE3E22F11F44C29ADBA75C /* gg_formats.h */ = {isa = PBXFileReference; name = "gg_formats.h"; path = "cordova-spatialite-storage/common/spatialite/gg_formats.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8CEAAAB0689145EDAF21A62A /* gg_mbr.h */ = {isa = PBXFileReference; name = "gg_mbr.h"; path = "cordova-spatialite-storage/common/spatialite/gg_mbr.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7F88E08E600744F7B6CB62A8 /* gg_structs.h */ = {isa = PBXFileReference; name = "gg_structs.h"; path = "cordova-spatialite-storage/common/spatialite/gg_structs.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5A570ABFF5554D1FBD147653 /* gg_wfs.h */ = {isa = PBXFileReference; name = "gg_wfs.h"; path = "cordova-spatialite-storage/common/spatialite/gg_wfs.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0778C53EA07C4CBB8E84D203 /* gg_xml.h */ = {isa = PBXFileReference; name = "gg_xml.h"; path = "cordova-spatialite-storage/common/spatialite/gg_xml.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		94215222FC694B5D9C3372F1 /* spatialite.h */ = {isa = PBXFileReference; name = "spatialite.h"; path = "cordova-spatialite-storage/common/spatialite/spatialite.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71BB1884DA224296B749C526 /* sqlite.h */ = {isa = PBXFileReference; name = "sqlite.h"; path = "cordova-spatialite-storage/common/spatialite/sqlite.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AC00CF9743F24ADF8B6B1321 /* libiconv.dylib */ = {isa = PBXFileReference; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		1647B237ECFF4CB49D12C47A /* libc++.dylib */ = {isa = PBXFileReference; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		CF64E818C0DA4194ABC3B3F6 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		04F8E51283D94F32998C71D0 /* libxml2.dylib */ = {isa = PBXFileReference; name = "libxml2.dylib"; path = "usr/lib/libxml2.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +504,15 @@
 				5F245143EEA64B2BBD85B2D0 /* SystemConfiguration.framework in Frameworks */,
 				E8F034E383E14C878EADA5C7 /* CoreTelephony.framework in Frameworks */,
 				21B6EE651B794C0AA6EBFC0D /* CoreLocation.framework in Frameworks */,
+				9174665E8CD6426CAE34C61E /* libgeos.a in Frameworks */,
+				322AAD423EC343A989FA348E /* libgeos_c.a in Frameworks */,
+				ABDF5A3D5A9745CEB0610BA0 /* libproj.a in Frameworks */,
+				8E5D95377A26422A89E5C6DF /* libspatialite.a in Frameworks */,
+				91C449E525B54449BD867ABF /* libsqlite3.a in Frameworks */,
+				41E2D7BF21E347BF984250C6 /* libiconv.dylib in Frameworks */,
+				C3F8384E2595462EA608B647 /* libc++.dylib in Frameworks */,
+				D2F3EB52C0F744E4AE2ABB82 /* Security.framework in Frameworks */,
+				EC48390C51B847EC9210D333 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +585,15 @@
 				12DDFCAEE8F24008BF74809A /* SystemConfiguration.framework */,
 				6A972D853EB44DC6901B42A0 /* CoreTelephony.framework */,
 				C022BD6AA5AF493083830CD0 /* CoreLocation.framework */,
+				845B19544D6F494FA649EE04 /* libgeos.a */,
+				1ED528F71FCB4727BB9D7810 /* libgeos_c.a */,
+				DC842B0D942C4838AEB00515 /* libproj.a */,
+				E4C99E6674AB4215BC34C1B7 /* libspatialite.a */,
+				F6193FB3A956426F9C818A98 /* libsqlite3.a */,
+				AC00CF9743F24ADF8B6B1321 /* libiconv.dylib */,
+				1647B237ECFF4CB49D12C47A /* libc++.dylib */,
+				CF64E818C0DA4194ABC3B3F6 /* Security.framework */,
+				04F8E51283D94F32998C71D0 /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +629,405 @@
 				D7451F6486A94828BFE0DB8D /* sqlite3.c */,
 				4ACB504C4A4B4C878A37B7AD /* SQLitePlugin.h */,
 				AFB2D80D86884E4481D6BF6A /* sqlite3.h */,
+				9CB99C5B50094D9F9BCECF81 /* SQLitePlugin.m */,
+				7CE3D367DE944E3B8CC29126 /* SQLitePlugin.h */,
+				6335BD31EC984D018DB33C1C /* geos.h */,
+				DF727EA7FC754E8EB3C22074 /* geos_c.h */,
+				F66E95861E124990B1C3A8D1 /* org_proj4_Projections.h */,
+				6397722CBC9745949E8824A6 /* proj_api.h */,
+				A59DA70C0EBA4193943300C7 /* spatialite.h */,
+				CB7DB35002FA4DC2A6019A80 /* sqlite3.h */,
+				EC3476E8BEBA43BA97E2AEFC /* sqlite3ext.h */,
+				393D336A45AF43BEBD14737F /* export.h */,
+				CFBC7763ED4D435C9115418F /* geom.h */,
+				B90A09018FBD4AC0B36020D2 /* geomgraph.h */,
+				B9B41F2B8FB64F008FC257F1 /* geomgraphindex.h */,
+				CC9AF077C82C4BF9A1A2B5E5 /* geomUtil.h */,
+				B3812E78C54149FBBD720323 /* geosAlgorithm.h */,
+				09CF2C983CE6409A8E3C832E /* indexBintree.h */,
+				C64FC8CB2BB2400196DB1BAF /* indexChain.h */,
+				F16B42FB198C49948A5065DA /* indexQuadtree.h */,
+				AD81D84AA62C49558197ED6A /* indexStrtree.h */,
+				76A2AA9305774F1E972B6CD0 /* indexSweepline.h */,
+				C075F9F83DC04D748E9FCC68 /* inline.h */,
+				1E6339F38EE644CEB7F96293 /* io.h */,
+				ED431954E3864FFE9028F6E3 /* noding.h */,
+				2F4FFAEAAD1342DE8F5724F0 /* nodingSnapround.h */,
+				CC875EFB13D942979873D13C /* opBuffer.h */,
+				42A05A4B065542128389DCE1 /* opDistance.h */,
+				876A084F55114D1A99B86DA8 /* operation.h */,
+				38325B3F9C424F478180F9B3 /* opLinemerge.h */,
+				D84201FF8FE94ABDA89A734D /* opOverlay.h */,
+				3B3C6C6207F14DF19F264833 /* opPolygonize.h */,
+				BBCD6758780144CDA979D6B9 /* opPredicate.h */,
+				BFB3501374C1451A87E0DCE3 /* opRelate.h */,
+				A87BC1500F0F42C3AC1920A0 /* opValid.h */,
+				3794728B6AAE4FC99308DB01 /* planargraph.h */,
+				683515AA9FF64817BB6B5CD1 /* platform.h */,
+				9B39552ED0E944588BC81520 /* precision.h */,
+				3C30F92E78994F479408C1E7 /* profiler.h */,
+				792102B1BC3F4BBA90A3F2B1 /* spatialIndex.h */,
+				B82B1CA74EA14EA6B9278712 /* timeval.h */,
+				0B16210E14E5478C9625F69F /* unload.h */,
+				F4EFD8D711724753B193BEC0 /* util.h */,
+				376BB6EA15DC456DA4EF58D0 /* version.h */,
+				2A43271672D54165B5288CCF /* Angle.h */,
+				DE16E70965E342F6BEBBBDF2 /* BoundaryNodeRule.h */,
+				F8D24CD403FD4234832521FD /* CentralEndpointIntersector.h */,
+				D7FB4DBEE461470FBE4C097D /* Centroid.h */,
+				CA503126C1614FB8BD7B79E1 /* CentroidArea.h */,
+				C3D223ADEB12492E9048D45D /* CentroidLine.h */,
+				838A0627036D44B39AF6DFBB /* CentroidPoint.h */,
+				70BCC141845C429C8DACCA89 /* CGAlgorithms.h */,
+				4229C713C07548A3BA8C3E94 /* ConvexHull.h */,
+				33FFEFE00F8F488CAF822BF9 /* ConvexHull.inl */,
+				DB7C98BDBE014FA7B2BD024C /* HCoordinate.h */,
+				C44542AB65E845D3BC44139D /* InteriorPointArea.h */,
+				D062E8B5545849DB93FFF0FA /* InteriorPointLine.h */,
+				D713E499E3C74899A2828705 /* InteriorPointPoint.h */,
+				2C4B6B5F1EBC499FAF3716A4 /* LineIntersector.h */,
+				066102CB60784DD88A5B3DE6 /* MCPointInRing.h */,
+				2B18572892584CC4B8505F71 /* MinimumDiameter.h */,
+				2D597C9896414D59ABB7C231 /* NotRepresentableException.h */,
+				B6093184674847C2B59B4A9A /* PointInRing.h */,
+				B33CE4C16E1647D189AD15CC /* PointLocator.h */,
+				A75E9D9F6ADC43FB9D0CB74A /* RayCrossingCounter.h */,
+				A0B4A007540B4D56AEEF6FA2 /* RobustDeterminant.h */,
+				2321C47462BF415786A3D224 /* SimplePointInRing.h */,
+				21E39DA0AAA44D2B8D69F651 /* SIRtreePointInRing.h */,
+				1DEB632F862D40F897921CDA /* DiscreteHausdorffDistance.h */,
+				7B10EA1EE1084A4BAD4EC353 /* DistanceToPoint.h */,
+				EDB33677166044F7AE561A7B /* PointPairDistance.h */,
+				D1285D218FDC4A689C4D75C8 /* IndexedPointInAreaLocator.h */,
+				1FE5D58F282942B6AB71BD90 /* PointOnGeometryLocator.h */,
+				B8D41D8C6E1A4E4391D56E38 /* SimplePointInAreaLocator.h */,
+				37E82F4BF9924C9B8CBCFA33 /* BinaryOp.h */,
+				8EE6D48151AA4D959CE5A892 /* Coordinate.h */,
+				ADFDA3F83A4A47159235FE67 /* Coordinate.inl */,
+				2BC1842E1AB0498BB03F2789 /* CoordinateArraySequence.h */,
+				278D848C60D24321B848F772 /* CoordinateArraySequenceFactory.h */,
+				06118D0094DD4661B983D2FB /* CoordinateArraySequenceFactory.inl */,
+				09B87D5AF59B4DC8A357DC5A /* CoordinateFilter.h */,
+				83612238ADE54082ACB4B150 /* CoordinateList.h */,
+				AFF7AD895CB94F388BCF292E /* CoordinateSequence.h */,
+				3912B2B2E77C481E9B97BE53 /* CoordinateSequenceFactory.h */,
+				6FFFA848DF08450E9569B396 /* CoordinateSequenceFilter.h */,
+				ABFB4D081A194F30B3DC2378 /* Dimension.h */,
+				088D3B2E29304482BE0A9D59 /* Envelope.h */,
+				BB1CF320E4894B96B9F599F1 /* Envelope.inl */,
+				31707FC8AFBE42DEB07A6AEF /* Geometry.h */,
+				3EE6FD6035CE4508A3596896 /* GeometryCollection.h */,
+				A5E124D5054740B4B174CDFD /* GeometryCollection.inl */,
+				9F38D1579E0E4BAA840A15BD /* GeometryComponentFilter.h */,
+				E94D7938B0D34E5B822C8362 /* GeometryFactory.h */,
+				E049BDD32CA84B449E7595B9 /* GeometryFactory.inl */,
+				3A5BC0CDFF8145349BC360BF /* GeometryFilter.h */,
+				C89B7CCB37484921A5010540 /* GeometryList.h */,
+				80DC8C8B0FC547118318C1DB /* IntersectionMatrix.h */,
+				0B018C36F4174E7AB7D7D84E /* Lineal.h */,
+				BE36AB35A0374CF490CCFFA8 /* LinearRing.h */,
+				F809F64E06244198A692C54C /* LineSegment.h */,
+				7D66798FE18E47C9BD517B92 /* LineSegment.inl */,
+				5D6D5B9240D84E24AC1949C6 /* LineString.h */,
+				3FB2B715B4C749A381CABB27 /* Location.h */,
+				A34CA4D3C54B490E8ADC486A /* MultiLineString.h */,
+				EF2F290711D543C1A082239C /* MultiLineString.inl */,
+				CC0AE3B2F4A2473699BA70F5 /* MultiPoint.h */,
+				6061C33EABF24C6493C3927E /* MultiPolygon.h */,
+				EA9049662948469E8B6BD70B /* MultiPolygon.inl */,
+				ECC54A3E28EF4E998335C7A1 /* Point.h */,
+				920ED2A7AE2345868F0FC237 /* Polygon.h */,
+				239F464D8CC1447684C6376D /* Polygonal.h */,
+				385F38B8EF134BA3A51DF1A7 /* PrecisionModel.h */,
+				A2D700A3BDA64485BAB5B43A /* PrecisionModel.inl */,
+				0CCF2FD6B8224D9AA32E3645 /* Puntal.h */,
+				459AF21A225E4B6483786D06 /* Triangle.h */,
+				3BEA26F841B14D4AABE223F8 /* AbstractPreparedPolygonContains.h */,
+				3118D5C8338E46A9AC12E72E /* BasicPreparedGeometry.h */,
+				42D591EFF94343AE9D480058 /* PreparedGeometry.h */,
+				8D69922F0442485FACE6D5AE /* PreparedGeometryFactory.h */,
+				52F19644693349068E50D977 /* PreparedLineString.h */,
+				D6A4F54D7C57457B9082703F /* PreparedLineStringIntersects.h */,
+				FDED77C9200D4FF1AE9DDD85 /* PreparedPoint.h */,
+				B04DF7C9541B4548B02966CB /* PreparedPolygon.h */,
+				4A50A7ADDFF04E2794A9793F /* PreparedPolygonContains.h */,
+				C43F7E4ED15B4EE3A6468699 /* PreparedPolygonContainsProperly.h */,
+				23D8794399744303BBFC9DC9 /* PreparedPolygonCovers.h */,
+				BB59FF227E4D45B0B1EA4CC1 /* PreparedPolygonIntersects.h */,
+				724393E51E874974A7B3596E /* PreparedPolygonPredicate.h */,
+				AAE65D5060A24D529F0A481D /* ComponentCoordinateExtracter.h */,
+				8E11717FBC32470E8E22EFEA /* CoordinateOperation.h */,
+				E4ED1921FF6846A0A5FA068A /* GeometryCombiner.h */,
+				769DBC60676946BB967DB9F4 /* GeometryEditor.h */,
+				7A87C0C73D5D4ADDB5C408A1 /* GeometryEditorOperation.h */,
+				B81901870DDE4196A878CCF0 /* GeometryExtracter.h */,
+				A0FED17AEDC64C3F977710CC /* GeometryTransformer.h */,
+				E6B417D7DDD94438A0C6D4F0 /* LinearComponentExtracter.h */,
+				D36EF3629EAB41B3A9F86907 /* PointExtracter.h */,
+				2CE9F0C372EA4F06BAB5508E /* PolygonExtracter.h */,
+				AF90774E416349ACBFBADB27 /* ShortCircuitedGeometryVisitor.h */,
+				3E47E566BD404052A74E5EBB /* SineStarFactory.h */,
+				468F007207BC44748182924F /* Depth.h */,
+				41790E0464994E069D6605D3 /* DirectedEdge.h */,
+				05915C321EBB436F9E6204D1 /* DirectedEdge.inl */,
+				639E553F403545D69416B4F6 /* DirectedEdgeStar.h */,
+				56110F0DCD9640D4A463C50B /* Edge.h */,
+				445C92EBFC514FADA6D7328F /* EdgeEnd.h */,
+				38300429A0914827883EBE35 /* EdgeEndStar.h */,
+				44ACF8F3997648A2BB9760BF /* EdgeIntersection.h */,
+				3EA5FDECED9F443C99879719 /* EdgeIntersectionList.h */,
+				C17786D9287742F1BF5CE192 /* EdgeList.h */,
+				92D538D7600848E2A6F35EEB /* EdgeNodingValidator.h */,
+				59C3EAE9C3A84423AA006B0F /* EdgeRing.h */,
+				9555C976C4C948ADBFEE7D9C /* GeometryGraph.h */,
+				B00FE18A119B42378A9AC75D /* GeometryGraph.inl */,
+				DC258898F46845398D01A959 /* GraphComponent.h */,
+				14E81265C7E34952BDC71223 /* Label.h */,
+				35915886F3454136B2520627 /* Node.h */,
+				3956CDC9400148AF8482CA6B /* NodeFactory.h */,
+				500A15770A9846CC8FCD0426 /* NodeMap.h */,
+				D44C42E321E64107ABD5A8E6 /* PlanarGraph.h */,
+				93E633EE0A524964B8170143 /* Position.h */,
+				C0D6EB15C3FC4B8198C7A359 /* Quadrant.h */,
+				AEA48529CD9C4474AC37F50F /* TopologyLocation.h */,
+				97E09CFA077A4D068F40268F /* EdgeSetIntersector.h */,
+				06461F52C46644F9A58451E2 /* MonotoneChain.h */,
+				02EAFE63DAAB44CCAC1E96B3 /* MonotoneChainEdge.h */,
+				D7B36C84C1F8490A851D9A38 /* MonotoneChainIndexer.h */,
+				9990DE50B82B49749263D91D /* SegmentIntersector.h */,
+				0E431BD4E4C44AE785FB4933 /* SimpleEdgeSetIntersector.h */,
+				38445F9566F8492BB530BFB1 /* SimpleMCSweepLineIntersector.h */,
+				E14E95135DA941F5B44E87E9 /* SimpleSweepLineIntersector.h */,
+				71F53A30FDE942A38D0F820D /* SweepLineEvent.h */,
+				250D293CA5014B14B6282A8A /* SweepLineEventObj.h */,
+				B7D8CC4BA28C4C7D9481A548 /* SweepLineSegment.h */,
+				6FF65645E1FE454C861D4B9A /* ItemVisitor.h */,
+				B895C2F69B54485280256A20 /* SpatialIndex.h */,
+				994E06D2054B4823B21B8BDC /* Bintree.h */,
+				25014851B07F46C4BDD4BBD1 /* Interval.h */,
+				0636ED95A81B40B8B2813E13 /* Key.h */,
+				4CB02AB47B4340178286524E /* Node.h */,
+				19AA51600BAB473F8E6F92E7 /* NodeBase.h */,
+				94930007C29B47F4A7C401E4 /* Root.h */,
+				E80B46FFC9C0414583728ED0 /* MonotoneChain.h */,
+				D246BC2FB89C4BA58B7D6F51 /* MonotoneChainBuilder.h */,
+				532CE3BFDC1A4EC297B4A783 /* MonotoneChainOverlapAction.h */,
+				688A8C5BE27D445EA8AD33B9 /* MonotoneChainSelectAction.h */,
+				A59D49D8F7454B31A4351641 /* IntervalRTreeBranchNode.h */,
+				E601E441A751443DB22DB170 /* IntervalRTreeLeafNode.h */,
+				BF4E0F027DD2490986C4CB79 /* IntervalRTreeNode.h */,
+				3293D4DADE6A47BAAF1C025E /* SortedPackedIntervalRTree.h */,
+				7EAFF07FA42C465C9CE5B9AF /* DoubleBits.h */,
+				65FE83DBEE0B4A96A2F0E959 /* IntervalSize.h */,
+				C4AFC35D41DB4573943D2220 /* Key.h */,
+				6AAB602942F34039A2AFC145 /* Node.h */,
+				C31F8D7482FD40A6A1982B33 /* NodeBase.h */,
+				F3B1902AC3004F73A6DC1159 /* Quadtree.h */,
+				ADD57FFCED204500B2CC1B41 /* Root.h */,
+				FA9AA81B015740CDAB0735E0 /* AbstractNode.h */,
+				7712928288DB484881BC3AF7 /* AbstractSTRtree.h */,
+				5E8B552A2FEB48DB8438A306 /* Boundable.h */,
+				D050A48D472D45A3B98F163E /* Interval.h */,
+				9CAA40027CF44B85BEDE5565 /* ItemBoundable.h */,
+				E2B7C28D4E514135A35DFA25 /* SIRtree.h */,
+				2BEAB4200FE84150AE2D93B6 /* STRtree.h */,
+				BE2DE9988B8F4B55B1DA7A58 /* SweepLineEvent.h */,
+				F083B3AC1D584F85A5322751 /* SweepLineIndex.h */,
+				172BA69E4D5E4F42A87D3CD0 /* SweepLineInterval.h */,
+				C02E0CD65D944661924B099F /* SweepLineOverlapAction.h */,
+				EA622538AF2F41178AA076D0 /* ByteOrderDataInStream.h */,
+				24F145318EA9445FBBF8269F /* ByteOrderDataInStream.inl */,
+				C443CDF9A8BC4587B7468EE3 /* ByteOrderValues.h */,
+				6D052F02D45D41DF877012E6 /* CLocalizer.h */,
+				C66C024C923B4F8CA7335C97 /* ParseException.h */,
+				49B20A1D28ED4245B90FD16B /* StringTokenizer.h */,
+				93409F88B17B46CDAB619B5E /* WKBConstants.h */,
+				DA997DD658C34727823B6297 /* WKBReader.h */,
+				0B6D73C4F093483493E80B6D /* WKBWriter.h */,
+				E850C753CF444EAFBB747BF6 /* WKTReader.h */,
+				7A25764E142C41D88838E274 /* WKTReader.inl */,
+				7C8A099311F6421CB648E0B0 /* WKTWriter.h */,
+				28E8140A7A1F4396A476C0CD /* Writer.h */,
+				5A44EFFF7E93493686798244 /* ExtractLineByLocation.h */,
+				E640317BB0FB438DBD3506F9 /* LengthIndexedLine.h */,
+				3C7BB676E7AE41E1B05D140E /* LengthIndexOfPoint.h */,
+				166563C65E8E4C6C8953ECFE /* LengthLocationMap.h */,
+				FF2D62413E824A66B166BDD8 /* LinearGeometryBuilder.h */,
+				86F6563EA496418591360EBF /* LinearIterator.h */,
+				21F81DBE43354EF2ABC2475E /* LinearLocation.h */,
+				5BC4B150409247FEBB56E51E /* LocationIndexedLine.h */,
+				1B8355E8D66647939C1FF118 /* LocationIndexOfLine.h */,
+				75FD13A8CEA64DDAA930F531 /* LocationIndexOfPoint.h */,
+				F84257185D3745F88CBF3C81 /* BasicSegmentString.h */,
+				3BE76FFE15434781B7AAD280 /* FastNodingValidator.h */,
+				331206BFE47F43D9997D3D49 /* FastSegmentSetIntersectionFinder.h */,
+				E1C780850B5341BE88B26CF9 /* GeometryNoder.h */,
+				1EDBA725E7FD4D82A38F27A7 /* IntersectionAdder.h */,
+				5D2E38FC253145429C0B80E9 /* IntersectionFinderAdder.h */,
+				A6F7D95F2A544403A45173EB /* IteratedNoder.h */,
+				6DA22A1BD0F24600855EEEE4 /* MCIndexNoder.h */,
+				6619B8E4D37141DD836271BA /* MCIndexNoder.inl */,
+				208E12636FC9446398526FDC /* MCIndexSegmentSetMutualIntersector.h */,
+				5462012C83EE4669BA229AF5 /* NodableSegmentString.h */,
+				4EF5B76346604693B64826B9 /* NodedSegmentString.h */,
+				769199FCEE59480786F2A06B /* Noder.h */,
+				CCE1D9C4FF9D480794584D76 /* NodingValidator.h */,
+				11C42FFBC2F24E46BB29AB2E /* Octant.h */,
+				6F39FA12B94C4CCD9487D01C /* OrientedCoordinateArray.h */,
+				980FFAFA23524A2EACE6FF40 /* ScaledNoder.h */,
+				DBC406DB0CC84316B37B4923 /* SegmentIntersectionDetector.h */,
+				413269DEEEA2413FA8017BC1 /* SegmentIntersector.h */,
+				48AD06E934134A6ABE006229 /* SegmentNode.h */,
+				F85F38683FF3461EAF0A8DFE /* SegmentNodeList.h */,
+				48AACBC426C348FEBD52DB34 /* SegmentPointComparator.h */,
+				810F04629CDA47ABB5519100 /* SegmentSetMutualIntersector.h */,
+				7DE7AA52DD3D41C3A87FF0CC /* SegmentString.h */,
+				1A0C1097805044E2A5FEE469 /* SegmentStringUtil.h */,
+				95F6B3BA65034E108D35F8F2 /* SimpleNoder.h */,
+				1D34E2EE099E41E084CB2258 /* SingleInteriorIntersectionFinder.h */,
+				1B66F26ED4E942428454F5F1 /* SinglePassNoder.h */,
+				3098B36C826E4189B8A0792D /* HotPixel.h */,
+				C728D2E2F5E8467F93B95F26 /* HotPixel.inl */,
+				2DB4BF8D4A9C4C91A5911EE5 /* MCIndexPointSnapper.h */,
+				8A8E7E7D672A4D569CB2EDE2 /* MCIndexSnapRounder.h */,
+				998031CF2C7845D58141667F /* SimpleSnapRounder.h */,
+				95C6FF27B74A4870A1C61E3A /* GeometryGraphOperation.h */,
+				D1DC2B6F29714C5DA1C4CC1B /* IsSimpleOp.h */,
+				B85E1F92F75D48E5947AF47B /* BufferBuilder.h */,
+				BCF01EAEB44D438799D058B0 /* BufferInputLineSimplifier.h */,
+				7F63C682D1D344D4BDC17109 /* BufferOp.h */,
+				D253C3D127154388B1FEDE54 /* BufferParameters.h */,
+				A5612D801CB4430BBF17AC58 /* BufferSubgraph.h */,
+				1D18E87D9AC04511BA991487 /* OffsetCurveBuilder.h */,
+				D48ED4C843334690B8D3F22F /* OffsetCurveSetBuilder.h */,
+				6EC93E62CCAE4A8A8336BD11 /* OffsetSegmentGenerator.h */,
+				0730044511C44CD2A1D6166B /* OffsetSegmentString.h */,
+				15E550BD6331489DA58AA61C /* RightmostEdgeFinder.h */,
+				E3F96157C6AF47AE9F1C1590 /* SubgraphDepthLocater.h */,
+				97979F11D1B4496C87A67973 /* ConnectedElementLocationFilter.h */,
+				A252C4DA8A024BF3AAB03EF6 /* ConnectedElementPointFilter.h */,
+				A09CB5D0CDCE4AFDB774D240 /* DistanceOp.h */,
+				9A6D743BD1A44A4D90676C45 /* GeometryLocation.h */,
+				B648CF7C79AB49FF9685EE30 /* EdgeString.h */,
+				016D0CE3B3F14E4A8FFF841F /* LineMergeDirectedEdge.h */,
+				CA876FF7B6314B428F2ED657 /* LineMergeEdge.h */,
+				58F540AAB5424857906D397A /* LineMergeGraph.h */,
+				1FA41631C30F409597C5928C /* LineMerger.h */,
+				F74E136EED404A19AB836538 /* LineSequencer.h */,
+				E0A03A46309A43CC887944A8 /* EdgeSetNoder.h */,
+				6AD2149D73B7409083D38FCF /* ElevationMatrix.h */,
+				B039F4BAE86F4A2C8EEAACAB /* ElevationMatrixCell.h */,
+				047903E5122346CF85A22068 /* FuzzyPointLocator.h */,
+				71363C9822D34E569767E39E /* LineBuilder.h */,
+				CD034791AAF44B549480F031 /* MaximalEdgeRing.h */,
+				1CC9E9FB854340F8B86B8EC6 /* MinimalEdgeRing.h */,
+				FAEC43E5CE274E64B88811DF /* MinimalEdgeRing.inl */,
+				2DA9447AEC8C4F70A2B36DAF /* OffsetPointGenerator.h */,
+				5FB05F7DC4BC43E7A8D08C42 /* OverlayNodeFactory.h */,
+				593FE3B90DD34FF084147AF9 /* OverlayOp.h */,
+				946975F82D9E4D48B607933C /* OverlayResultValidator.h */,
+				5E3B4C04BE434B9A81CF14D1 /* PointBuilder.h */,
+				99231592698D48B0A68483CC /* PolygonBuilder.h */,
+				9A69CC43241E45E4AF50AC1E /* GeometrySnapper.h */,
+				6CA1D22A15CE4781BFAD0128 /* LineStringSnapper.h */,
+				48AD6E5C49AB44F9B3D69873 /* SnapIfNeededOverlayOp.h */,
+				A19EDA608F154BAE94913F3E /* SnapOverlayOp.h */,
+				34514A6A6246445283901939 /* EdgeRing.h */,
+				C9C58E4F90CE49688D803DA6 /* PolygonizeDirectedEdge.h */,
+				A3B128AB56F34237B3BE20DA /* PolygonizeEdge.h */,
+				BEB9653BCB26438B8BC3336F /* PolygonizeGraph.h */,
+				A4E539A4F549424E918B3418 /* Polygonizer.h */,
+				4B5437F5AA104AE78B5BF768 /* RectangleContains.h */,
+				D7DFF85EB87444CCA9059988 /* RectangleIntersects.h */,
+				F55678429EBC445E91D733AF /* SegmentIntersectionTester.h */,
+				8BC66E07527B4E0B93303674 /* EdgeEndBuilder.h */,
+				2205247DF10E403790700C29 /* EdgeEndBundle.h */,
+				7C468E971C494AD99B551D6C /* EdgeEndBundleStar.h */,
+				17CD4D6330B442E990920C4E /* RelateComputer.h */,
+				64F6B339FB8D43C49A95996F /* RelateNode.h */,
+				DCE8FA8F3C3544509DA4CAA5 /* RelateNodeFactory.h */,
+				9A744EBE61FC4373801EC554 /* RelateNodeGraph.h */,
+				D79894AB5B364FD7894A6F7A /* RelateOp.h */,
+				0D3D69ECBC1A4C81978997DC /* SharedPathsOp.h */,
+				ACF86B98E0C2425789FD03E3 /* CascadedPolygonUnion.h */,
+				F2A95204923248D3BEC337AC /* CascadedUnion.h */,
+				5F1A32A46014434389D13217 /* GeometryListHolder.h */,
+				F7AA6B6DEA364E7ABA258573 /* PointGeometryUnion.h */,
+				B588996ECA6C41D581103464 /* UnaryUnionOp.h */,
+				B40C7BF3C84A49C39E5FDDF9 /* ConnectedInteriorTester.h */,
+				04124420DE794D0F9992C963 /* ConsistentAreaTester.h */,
+				7030238BD4334C6A9DDE2582 /* IsValidOp.h */,
+				B21BD9A224124587900F0DAC /* QuadtreeNestedRingTester.h */,
+				F77DB4EFFEB84348A744C6CA /* RepeatedPointTester.h */,
+				E91E7A1E203F469CA6431A0C /* SimpleNestedRingTester.h */,
+				4744461044FA4598920C5691 /* SweeplineNestedRingTester.h */,
+				31E23FA24231418FA978CA74 /* TopologyValidationError.h */,
+				73FF7ABE47214278848C443D /* DirectedEdge.h */,
+				12F63428D2E241848AE617B0 /* DirectedEdgeStar.h */,
+				33512C16EF1D4262B629C331 /* Edge.h */,
+				AB848C66AC6B4C90BB753235 /* GraphComponent.h */,
+				5F5F3628F9A7408FA406F6C6 /* Node.h */,
+				69D646BE3ED0458CA5E70E76 /* NodeMap.h */,
+				517BEAEC992E4A9CB8B7A252 /* PlanarGraph.h */,
+				A70CE8976E774459A844E9C2 /* Subgraph.h */,
+				EF698C79CB1449B1BEB39E7D /* ConnectedSubgraphFinder.h */,
+				4D0EE30F62734C6B911813E5 /* CommonBits.h */,
+				E84EDD18C89D49AAA2E345BB /* CommonBitsOp.h */,
+				CB98CCA9B5AA4E51AF2243F8 /* CommonBitsRemover.h */,
+				E6CC1CF9C1414A1BBE218B9F /* EnhancedPrecisionOp.h */,
+				C00FBCD7F4D84B2DA2578F58 /* GeometryPrecisionReducer.h */,
+				FB2C94F72FFD42B2A2BD743D /* PrecisionReducerCoordinateOperation.h */,
+				C77B626C9BA34D7785647893 /* SimpleGeometryPrecisionReducer.h */,
+				823AAC7DA2BF4C7BB8BC38EE /* DouglasPeuckerLineSimplifier.h */,
+				3B65F8482A60414391AEB998 /* DouglasPeuckerSimplifier.h */,
+				43B8501E65194100A9B741DA /* LineSegmentIndex.h */,
+				0D50235411D44CBABA34BE39 /* TaggedLineSegment.h */,
+				EE4B8CD30CCF4B2FB4BE98CB /* TaggedLinesSimplifier.h */,
+				17103CC9675B4A3D9976571D /* TaggedLineString.h */,
+				C6E6401516744A0AACA890A4 /* TaggedLineStringSimplifier.h */,
+				6A93C59F91704495A19095AE /* TopologyPreservingSimplifier.h */,
+				B012EECF12EF44748CB7A7F1 /* DelaunayTriangulationBuilder.h */,
+				96F41B85D2394F79BA8AF29C /* IncrementalDelaunayTriangulator.h */,
+				1CF775C441524E33BF41C85E /* LastFoundQuadEdgeLocator.h */,
+				F795918A4DF24FA8913C54EB /* LocateFailureException.h */,
+				80963839F7B9411BBE56E053 /* QuadEdge.h */,
+				0E252F340DDC408D83B04945 /* QuadEdgeLocator.h */,
+				4B82115B392D4F6FAC6C7EA2 /* QuadEdgeSubdivision.h */,
+				B0FD6558E76F4741BC788703 /* TrianglePredicate.h */,
+				1044583328014037AA608920 /* TriangleVisitor.h */,
+				145CF5DCAB8642BCBF8EB133 /* Vertex.h */,
+				FC6858FB647D42258FEE995E /* Assert.h */,
+				F60DBA911C7A4BD5BDB85CD1 /* AssertionFailedException.h */,
+				9AF608FAE2C24A42852FF18D /* CoordinateArrayFilter.h */,
+				657D9A8FA8B942B3B179CC2E /* GeometricShapeFactory.h */,
+				872B524416964FF7BE295E10 /* GEOSException.h */,
+				1323D53F57D14892BE3A36B5 /* IllegalArgumentException.h */,
+				614AD76CEC3F40F79766933A /* IllegalStateException.h */,
+				61625B7C33AF41D4B21F84D6 /* Interrupt.h */,
+				3ABE3E8C08A54904B68177DB /* Machine.h */,
+				10E102660F9E4703905852DD /* math.h */,
+				EACC5F65112745908ABF0FA7 /* TopologyException.h */,
+				A2E29B77D7254E79A3C160EA /* UniqueCoordinateArrayFilter.h */,
+				FE571850157A4D23AAD9C414 /* UnsupportedOperationException.h */,
+				A4E0BB4CD60E4B6599AD33E0 /* control_points.h */,
+				FCD331387A974BEBB1F11205 /* debug.h */,
+				7903B5411FDB4688AB9D4A3B /* gaiaaux.h */,
+				284EFE9B7E6F4E0CBFC5DF55 /* gaiaexif.h */,
+				F2CB98D2A9B749708A5EDA86 /* gaiageo.h */,
+				2D1A4BF87B364ACAB0E58162 /* gaiamatrix.h */,
+				996C20775ACA452E950FD8A2 /* geopackage.h */,
+				7FBF5BFC6F6A457DB498A038 /* gg_advanced.h */,
+				042C72ECD52745C194E01420 /* gg_const.h */,
+				158526C7EB764D9592C9A910 /* gg_core.h */,
+				45666185512848659235785C /* gg_dxf.h */,
+				E6102D2CC004464CA4817D36 /* gg_dynamic.h */,
+				11EE3E22F11F44C29ADBA75C /* gg_formats.h */,
+				8CEAAAB0689145EDAF21A62A /* gg_mbr.h */,
+				7F88E08E600744F7B6CB62A8 /* gg_structs.h */,
+				5A570ABFF5554D1FBD147653 /* gg_wfs.h */,
+				0778C53EA07C4CBB8E84D203 /* gg_xml.h */,
+				94215222FC694B5D9C3372F1 /* spatialite.h */,
+				71BB1884DA224296B749C526 /* sqlite.h */,
 			);
 			name = Plugins;
 			path = "trabajo_Grado/Plugins";
@@ -309,6 +1144,7 @@
 				601DACF19333450D8B00776C /* CDVLocation.m in Sources */,
 				569396E4BF9348BEA7795A7C /* SQLitePlugin.m in Sources */,
 				98B46C7FEAD24C3C957968A2 /* sqlite3.c in Resources */,
+				11E934A1E92740C39A330D70 /* SQLitePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +1178,14 @@
 				INFOPLIST_FILE = "trabajo_Grado/trabajo_Grado-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "trabajo_Grado";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+				);
 			};
 			name = Debug;
 		};
@@ -361,6 +1205,14 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "trabajo_Grado/trabajo_Grado-Info.plist";
 				PRODUCT_NAME = "trabajo_Grado";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+					"\"$(SRCROOT)/trabajo_Grado/Plugins/cordova-spatialite-storage\"",
+				);
 			};
 			name = Release;
 		};

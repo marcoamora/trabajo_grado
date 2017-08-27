@@ -18,7 +18,7 @@
                         },
                         {
                             "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -38,6 +38,9 @@
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         },
         "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.marcos.trabajo_grado"
+        },
+        "cordova-spatialite-storage": {
             "PACKAGE_NAME": "com.marcos.trabajo_grado"
         }
     },
@@ -99,11 +102,20 @@
             "clobbers": [
                 "SQLitePlugin"
             ]
+        },
+        {
+            "id": "cordova-spatialite-storage.SQLitePlugin",
+            "file": "plugins/cordova-spatialite-storage/www/SQLitePlugin.js",
+            "pluginId": "cordova-spatialite-storage",
+            "clobbers": [
+                "SQLitePlugin"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-network-information": "1.2.1",
         "cordova-plugin-geolocation": "2.1.0",
-        "cordova-sqlite-storage": "1.5.3"
+        "cordova-sqlite-storage": "1.5.3",
+        "cordova-spatialite-storage": "1.2.0"
     }
 }
